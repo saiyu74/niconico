@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+<head>
+  <title th:text="#{content.first.title}"></title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="description" th:content="@{content.first.description}" />
+  <link rel="canonical" th:href="#{content.first.url}" />
+  <meta property="og:url" th:content="#{content.first.url}" />
+  <meta property="og:title" th:content="#{content.first.title}" />
+  <meta property="og:description" th:content="#{content.first.description}" />
+</head>
+<body>
+  <div  th:remove="tag" id="container">
+    <div layout:fragment="mainSection">
+      <article id="post-15" class="post-15 page type-page status-publish hentry">
+        <div class="entry-body">
+          <h2 class="bg-head color-grn mb-4">初めての方へ</h2>
+          <div class="text-center pb-3">
+            <img th:src="@{images/first/3263.jpg}">
+          </div>
+          <div class="text-center py-3">
+            <img
+              th:src="@{images/first/head_1@2x.png}"
+              class="px-md-4">
+          </div>
+          <div class="d-md-flex row my-4">
+            <div class="col-md-4">
+              <figure>
+                <img
+                  th:src="@{images/profile/sai.jpg}">
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <p>はじめまして、にこにこ整骨院のホームページを見て頂きありがとうございます。</p>
+              <p>
+                痛みや身体の不調など、<span class="pc-br">お悩みを抱えていてもいざ整骨院に行くとなると不安を感じる人も多いだろうと思います。</span>
+              </p>
+              <p>お越し頂く前にたとえば、こんな不安を感じたりしませんか？</p>
+            </div>
+          </div>
+          <div class="border-yel p-4 my-4">
+            <ul class="list-unstyled list-check m-0">
+              <li class="mb-2">痛みや身体の不調の悩みは解決出来るのか</li>
+              <li class="mb-2">しっかりした知識のある先生に診てもらえるのか</li>
+              <li class="mb-0">痛いだけの施術じゃないのか</li>
+            </ul>
+          </div>
+          <div class="pb-4">
+            <p>
+              なぜなら、今通っている患者様も最初はこんな不安があったとおっしゃる方が多いからです。<br>ですから、このページを見て少しでも不安が少なくなれば幸いです。
+            </p>
+            <p>
+              私は今まで5万人以上の痛みや身体の不調の悩みを解決してきました。<br>お悩みを抱えた多くの方々がおっしゃる事は、「痛みの原因や解決法を教えてもらえなかった」、「よく分からないまま施術をされた」、「痛みが悪化した」などです。
+            </p>
+            <p>
+              なぜそうなるのでしょうか？<br>それは原因を追求にしないまま、こう対処するみたいなマニュアルに沿った施術を行っている事が多いからです。
+            </p>
+            <p>原因を施術せず、緩和だけの施術なので受けた日は良くても、時間が経つにつれ痛みや不調が繰り返すのです。</p>
+            <p>当院では、初めての患者様はじっくりとお話をお伺いして可動域のチェックや検査を行い痛みや身体の不調の原因が分かるようにいたしますので、患者様の弱点を理解頂いて施術をします。</p>
+            <p>
+              このページでは、これからお越し頂く予定の方向けに不安なくご来院頂けるように配慮して、<span class="marker"><b>院内の特徴や施術の流れ、選ばれる理由</b></span>などをご紹介してにこにこ整骨院の事を詳しく知って頂ける事を目的に作成しています。
+            </p>
+            <p>痛みや身体の不調を根本から解決したいと考える方は読み進めてください。</p>
+          </div>
+        
+          <div class="my-5">
+            <img
+              th:src="@{images/first/head_2@2x.png}">
+          </div>
+          <div class="bg-dot-head my-4">
+            <div class="d-table w-100">
+              <div class="d-table-row">
+                <div class="d-table-cell num feature text-center">
+                  <p class="mb-0">
+                    <b>1</b>
+                  </p>
+                </div>
+                <div class="d-table-cell text align-middle p-3">
+                  <h5 class="m-0 p-0">
+                    <b>川口駅付近なので会社帰りでも気軽に<span class="pc-br">通いやすいです。</span></b>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3235.93364108609!2d139.71733846508724!3d35.801562380166466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f0.1!4m13!3e2!4m5!1s0x6018936f1b42a1eb%3A0xc567c84a5574a8f1!2z5Z-8546J55yM5bed5Y-j5biC5qCE55S677yT5LiB55uu77yVIOW3neWPo-mnheadseWPow!3m2!1d35.8025099!2d139.7185308!4m5!1s0x6018935ab1b3683f%3A0xf37bc25e3551b346!2z44CSMzMyLTAwMTIg5Z-8546J55yM5bed5Y-j5biC5pys55S677yU5LiB55uu77yW4oiS77yR77yQIOW3neWPoyDjgavjgZPjgavjgZPmlbTpqqjpmaI!3m2!1d35.8006149!2d139.7205234!5e0!3m2!1sja!2sjp!4v1679211103041!5m2!1sja!2sjp"
+ width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          <div class="pb-4">
+            <p>JR川口駅東口より徒歩3分！</p>
+            <p>JR川口駅東口を出て、本町大通りを直進するとファミリーレストラン「ジョナサン」が見えます</p>
+            <p>ジョナサン向かい側のマンションの１階に当院がございます。</p>
+            <p>お車でお越しの方は近隣のコインパーキングをご利用下さいませ</p>
+          </div>
+          <div class="bg-dot-head my-4">
+            <div class="d-table w-100">
+              <div class="d-table-row">
+                <div class="d-table-cell num feature text-center">
+                  <p class="mb-0">
+                    <b>2</b>
+                  </p>
+                </div>
+                <div class="d-table-cell text align-middle p-3">
+                  <h5 class="m-0 p-0">
+                    <b>カーテンで仕切られた空間と衛生管理を<span class="pc-br">徹底しています！</span></b>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            <img
+              th:src="@{images/first/room.png}">
+          </p>
+          <div class="pb-2">
+            <p>
+              お身体のお悩みを話す時、近くに他の患者様がいると本音を話しづらいと思います。<br>ですので、当院は個室にてカウンセリングを行います。
+            </p>
+          </div>
+          
+<!--          <div th:replace="fragment/access_fragment::panorama"></div>-->
+          
+          <div class="bg-dot-head my-4">
+            <div class="d-table w-100">
+              <div class="d-table-row">
+                <div class="d-table-cell num feature text-center">
+                  <p class="mb-0">
+                    <b>3</b>
+                  </p>
+                </div>
+                <div class="d-table-cell text align-middle p-3">
+                  <h5 class="m-0 p-0">
+                    <b>最新の電気治療器で痛みを繰り返さない<span class="pc-br">体作りをサポート！</span></b>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-center">
+            <img
+              th:src="@{images/first/machine.png}">
+          </p>
+          <div th:replace="fragments/first_fragment::flow"></div>
+          <div th:replace="fragments/reasion::reasion"></div>
+          <div th:replace="fragments/merit::merit"></div>
+          <div th:replace="fragments/price_fragment::campaign"></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>

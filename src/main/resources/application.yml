@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: Spring Security With Spring Boot 2.2
+  datasource:
+    url: jdbc:mysql://localhost:3306/rapport_web?allowPublicKeyRetrieval=true&serverTimezone=Asia/Tokyo
+    username: choiyongjp
+    password: P@ssw0rd
+    hikari:
+      connection-test-query: select 1
+      connection-timeout: 10000
+      maximum-pool-size: 2
+      minimum-idle: 2
+  jpa:
+    open-in-view: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect

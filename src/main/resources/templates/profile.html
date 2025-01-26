@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+<head>
+  <title th:text="#{content.profile.title}"></title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="description" th:content="@{content.top.description}" />
+  <link rel="canonical" th:href="#{content.profile.url}" />
+	<meta property="og:url" th:content="#{content.profile.url}" />
+	<meta property="og:title" th:content="#{content.profile.title}" />
+	<meta property="og:description" th:content="#{content.profile.description}" />
+</head>
+<body>
+	<div th:remove="tag" id="container">
+		<div layout:fragment="slider"></div>
+
+		<div layout:fragment="mainSection">
+			<!-- メインコンテンツ -->
+
+			<article id="post-19"
+				class="post-19 page type-page status-publish hentry">
+				<div class="entry-body">
+					<h2 class="bg-head color-grn mb-4">院長挨拶</h2>
+					<div class="text-center py-3">
+						<h5 class="h5-middle mt-0">
+							<b><span class="color-red">ご安心ください。<br>整形外科医や治療家も推薦する施術で痛みの緩和に加え、<span
+									class="pc-br">痛みを繰り返さない体づくりをサポートします。</span></span></b>
+						</h5>
+					</div>
+					<div class="d-md-flex row">
+						<div class="col-md-4">
+							<p>
+								<img
+									th:src="@{images/profile/incho.jpg}">
+							</p>
+						</div>
+						<div class="col-md-8">
+							<h3 class="simple-head mt-0 mb-4">院長 八重樫 海東</h3>
+							<div class="pb-3">
+								<p>
+									初めまして院長の八重樫　海東です。私は中国出身ですが、日本に来て20年になります。中国で医学の勉強をし、日本では柔道整復師の資格を取得しております。
+									整骨・整体経歴１８年となりなります。
+                  どうしたら健康な身体を維持できるか、日々研究しております。
+                  是非皆様の健康のお手伝いをさせてください！腕には自信があります。
+                  どこに行っても良くならない長年の不調、お気軽にご相談ください。
+									
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="d-md-flex row py-3 text-center">
+						<div class="col-md-12">
+							<p class="mb-2">
+								<img
+									th:src="@{images/profile/license.jpg}">
+							</p>
+							<p>柔道整復師免許証</p>
+						</div>
+					</div>
+					<div class="text-center py-3">
+						<h5 class="h5-middle my-0">
+							<b><span class="color-red">痛みの改善に加え再発しない体作りをサポートします！</span></b>
+						</h5>
+					</div>
+
+					<div class="d-md-flex row pt-5">
+						<div class="col-md-4">
+							<p>
+								<img
+                  th:src="@{images/profile/baba.jpg}">
+							</p>
+						</div>
+						<div class="col-md-8">
+							<h3 class="simple-head mt-0 mb-4">馬場 いずみ(ババ イズミ)</h3>
+							<div class="pb-3">
+                <p>
+                経歴：１０年
+                </p>
+								<p>
+                身体のお悩みに寄り添い解決までサポートします！
+								</p>
+							</div>
+						</div>
+					</div>
+
+          <div class="d-md-flex row pt-5">
+            <div class="col-md-4">
+              <p>
+                <img
+                  th:src="@{images/profile/machida.jpg}">
+              </p>
+            </div>
+            <div class="col-md-8">
+              <h3 class="simple-head mt-0 mb-4">町田 一斗（マチダ イット）</h3>
+              <div class="pb-3">
+                <p>
+                経歴：３年
+                </p>
+                <p>
+                丁寧にヒヤリングしお悩みを解決します！
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-md-flex row pt-5">
+            <div class="col-md-4">
+              <p>
+                <img
+                  th:src="@{images/profile/tomooka.png}" style="width:130%;height:130%">
+              </p>
+            </div>
+            <div class="col-md-8">
+              <h3 class="simple-head mt-0 mb-4">友岡　結美（トモオカ　ユカ）</h3>
+              <div class="pb-3">
+                <p>
+                経歴：３年
+                </p>
+                <p>
+                一人一人に合わせた丁寧な施術！
+                </p>
+              </div>
+            </div>
+          </div>
+				</div>
+			</article>
+			<!-- [ /#post-19 ] -->
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TNH8F62');</script>
+	<!-- End Google Tag Manager -->
+	<!-- メタ情報 -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- head内に書きたいコード -->
+	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+	<!-- スタイルシート -->
+	<link rel='stylesheet' th:href='@{content/plugins/vk-all-in-one-expansion-unit/assets/css/vkExUnit_style.css}'
+		type='text/css' media='all' />
+	<link rel='stylesheet' th:href='@{includes/css/dist/block-library/style.min.css}' type='text/css' media='all' />
+	<link rel='stylesheet' th:href='@{content/themes/lightning/library/bootstrap-4/css/bootstrap.min.css}'
+		type='text/css' media='all' />
+	<link rel='stylesheet' th:href='@{content/themes/lightning/design-skin/origin2/css/style.css}' type='text/css'
+		media='all' />
+	<style id='lightning-design-style-inline-css' type='text/css'>
+		.tagcloud a:before {
+			font-family: "Font Awesome 5 Free";
+			content: "\f02b";
+			font-weight: bold;
+		}
+
+		.media .media-body .media-heading a:hover {
+			color: #FFAC1D;
+		}
+
+		@media (min-width: 768px) {
+
+			.gMenu>li:before,
+			.gMenu>li.menu-item-has-children::after {
+				border-bottom-color: #FFAC1D
+			}
+
+			.gMenu li li {
+				background-color: #FFAC1D
+			}
+
+			.gMenu li li a:hover {
+				background-color: #FFAC1D;
+			}
+		}
+
+		/* @media (min-width: 768px) */
+		.page-header {
+			background-color: #FFAC1D;
+		}
+
+		h2,
+		.mainSection-title {
+			border-top-color: #FFAC1D;
+		}
+
+		h3:after,
+		.subSection-title:after {
+			border-bottom-color: #FFAC1D;
+		}
+
+		ul.page-numbers li span.page-numbers.current {
+			background-color: #FFAC1D;
+		}
+
+		.pager li>a {
+			border-color: #FFAC1D;
+			color: #FFAC1D;
+		}
+
+		.pager li>a:hover {
+			background-color: #FFAC1D;
+			color: #fff;
+		}
+
+		.siteFooter {
+			border-top-color: #FFAC1D;
+		}
+
+		dt {
+			border-left-color: #FFAC1D;
+		}
+	</style>
+	<link rel='stylesheet' th:href='@{content/themes/lightning/assets/css/common.css}' type='text/css' media='all' />
+	<link rel='stylesheet' th:href='@{content/themes/lightning_child/style.css}' type='text/css' media='all' />
+	<style type='text/css'>
+		.prBlock_icon_outer {
+			border: 1px solid #FFAC1D;
+		}
+
+		.prBlock_icon {
+			color: #FFAC1D;
+		}
+	</style>
+
+
+	<link rel='stylesheet' th:href='@{content/themes/lightning/inc/font-awesome/package/versions/5/css/all.min.css}'
+		type='text/css' media='all' />
+  <link rel="stylesheet" th:href='@{vendor/SmartSlider3/css/smartslider.min.css}' type='text/css' media='all' />
+<style type="text/css">.n2-ss-spinner-simple-white-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.n2-ss-spinner-simple-white {
+  outline: 1px solid RGBA(0,0,0,0);
+  width:100%;
+  height: 100%;
+}
+
+.n2-ss-spinner-simple-white:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+
+.n2-ss-spinner-simple-white:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border-top: 2px solid #333;
+    border-right: 2px solid transparent;
+    animation: n2SimpleWhite .6s linear infinite;
+}
+@keyframes n2SimpleWhite {
+    to {transform: rotate(360deg);}
+}
+.n2-ss-spinner-simple-white-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.n2-ss-spinner-simple-white {
+  outline: 1px solid RGBA(0,0,0,0);
+  width:100%;
+  height: 100%;
+}
+
+.n2-ss-spinner-simple-white:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -11px;
+    margin-left: -11px;
+}
+
+.n2-ss-spinner-simple-white:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border-top: 2px solid #333;
+    border-right: 2px solid transparent;
+    animation: n2SimpleWhite .6s linear infinite;
+}
+@keyframes n2SimpleWhite {
+    to {transform: rotate(360deg);}
+}</style>
+
+<script type=' text/javascript' th:src='@{includes/js/jquery/jquery.js}'></script>
+	<script type='text/javascript' id='jquery-core-js-after'>
+		; (function ($, document, window) {$(document).ready(function ($) {/* Add scroll recognition class */$(window).scroll(function () {var scroll = $(this).scrollTop(); if ($(this).scrollTop() > 160) {$('body').addClass('header_scrolled');} else {$('body').removeClass('header_scrolled');} });});})(jQuery, document, window);
+	</script>
+	<style id="lightning-color-custom-for-plugins" type="text/css">
+		/* ltg theme common */
+		.color_key_bg,
+		.color_key_bg_hover:hover {
+			background-color: #FFAC1D;
+		}
+
+		.color_key_txt,
+		.color_key_txt_hover:hover {
+			color: #FFAC1D;
+		}
+
+		.color_key_border,
+		.color_key_border_hover:hover {
+			border-color: #FFAC1D;
+		}
+
+		.color_key_dark_bg,
+		.color_key_dark_bg_hover:hover {
+			background-color: #FFAC1D;
+		}
+
+		.color_key_dark_txt,
+		.color_key_dark_txt_hover:hover {
+			color: #FFAC1D;
+		}
+
+		.color_key_dark_border,
+		.color_key_dark_border_hover:hover {
+			border-color: #FFAC1D;
+		}
+	</style>
+	<style id="lightning-common-style-custom" type="text/css">
+		/* ltg common custom */
+		.bbp-submit-wrapper .button.submit,
+		.woocommerce a.button.alt:hover,
+		.woocommerce-product-search button:hover,
+		.woocommerce button.button.alt {
+			background-color: #FFAC1D;
+		}
+
+		.bbp-submit-wrapper .button.submit:hover,
+		.woocommerce a.button.alt,
+		.woocommerce-product-search button,
+		.woocommerce button.button.alt:hover {
+			background-color: #FFAC1D;
+		}
+
+		.woocommerce ul.product_list_widget li a:hover img {
+			border-color: #FFAC1D;
+		}
+
+		.veu_color_txt_key {
+			color: #FFAC1D;
+		}
+
+		.veu_color_bg_key {
+			background-color: #FFAC1D;
+		}
+
+		.veu_color_border_key {
+			border-color: #FFAC1D;
+		}
+
+		.btn-default {
+			border-color: #FFAC1D;
+			color: #FFAC1D;
+		}
+
+		.btn-default:focus,
+		.btn-default:hover {
+			border-color: #FFAC1D;
+			background-color: #FFAC1D;
+		}
+
+		.btn-primary {
+			background-color: #FFAC1D;
+			border-color: #FFAC1D;
+		}
+
+		.btn-primary:focus,
+		.btn-primary:hover {
+			background-color: #FFAC1D;
+			border-color: #FFAC1D;
+		}
+	</style>
+	<link rel="icon" th:href="@{images/favicon-32x32.png}" sizes="32x32" />
+	<link rel="icon" th:href="@{images/favicon-192x192.png}" sizes="192x192" />
+	<link rel="apple-touch-icon" th:href="@{images/favicon-180x180.png}" />
+	<meta name="msapplication-TileImage" th:href="@{images/favicon-270x270.png}" />
+
+
+
+  <script type=' text/javascript' th:src='@{includes/js/jquery/jquery.js}'></script>
+  <script type="text/javascript" th:src="@{js/common.js}"></script>
+  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/n2.min.js}'></script>
+  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-frontend.min.js}'></script>
+  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-simple-type-frontend.min.js}'></script>
+  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-backgroundanimation.min.js}'></script>
+  <script type="text/javascript" layout:fragment="javascript"></script>
+</head>
+
+</head>
+
+<body class="home blog drawer drawer--left sidebar-fix bootstrap4 device-mobile fa_v5_css drawer-close scrolled">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNH8F62"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div th:replace="fragments/header::header"></div>
+  <div layout:fragment="slider" th:tag="remove"></div>
+  <div class="section siteContent">
+      <div class="container">
+        <div class="row d-md-flex">
+          <!-- メインコンテンツ -->
+          <div layout:fragment="mainSection" class="col-md-8 mainSection order-2"></div>
+        <!-- サイドナビ -->
+        <div th:replace="fragments/sidemenu::sidemenu"></div>
+      </div>
+    </div>
+  </div>
+  <!--/#container-->
+  <div th:replace="fragments/footer::footer"></div>
+</body>
+</html>

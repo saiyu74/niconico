@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+<head>
+  <title th:text="#{content.jiko.title}"></title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="description" th:content="@{content.jiko.description}" />
+  <link rel="canonical" th:href="#{content.jiko.url}" />
+	<meta property="og:url" th:content="#{content.jiko.url}" />
+	<meta property="og:title" th:content="#{content.jiko.title}" />
+	<meta property="og:description" th:content="#{content.jiko.description}" />
+</head>
+<body>
+  <div  th:remove="tag" id="container">
+  
+  <div layout:fragment="mainSection">
+
+    <article id="post-49" class="post-49 page type-page status-publish hentry">
+    <div class="entry-body">
+        <h2 class="bg-head color-grn mb-4">交通事故</h2>
+        <div class="py-3">
+            <img th:src="@{images/jiko/intro@2x.jpg}">
+        </div>
+	    <div  th:fragment="top_trouble" th:tag="remove">
+	      <div class="mb-5">
+	        <img th:src="@{images/jiko/top_trouble@2x.jpg}">
+	      </div>
+	    </div>
+        <div class="mb-4">
+            <img th:src="@{images/jiko/head_1@2x.png}">
+        </div>
+        <div class="text-center">
+            <p>交通事故に遭った後に出て来る、頭痛や吐き気、めまい、むち打ち等の痛みや身体の不調は、骨折や打撲のように周りの人は見た目で痛みや身体の不調を抱えていると判断できません。</p>
+            <p>しかも場合によっては、事故に遭った時は痛みや不調がなく時間が経つに連れて<span class="pc-br">痛みや身体の不調が出てきて改善までに時間がかかる事もあります。</span></p>
+            <p>交通事故に遭ったけど、どこに相談したら良いか分からず悩んでいる方は、お気軽にご相談ください。</p>
+        </div>
+        <div class="mb-5 text-center">
+            <img th:src="@{images/jiko/head_5@2x.jpg}" class="px-md-5">
+        </div>
+        <div class="mb-5">
+            <img th:src="@{images/jiko/figure_1@2x.jpg}">
+        </div>
+        <div class="mb-5 text-center">
+            <img th:src="@{images/jiko/head_3@2x.png}">
+        </div>
+        <div class="d-sm-flex row">
+            <div class="col-sm-6">
+                <p><img th:src="@{images/jiko/figure_2@2x.jpg}"></p>
+            </div>
+            <div class="col-sm-6">
+                <p>病院で行うレントゲン検査は、骨や内臓は映りますが筋肉や神経は映りません。</p>
+                <p>ですから、検査をしても異常なしと言われて湿布や痛み止めの処方で様子見になります。</p>
+                <p>つまり、痛みの緩和は出来ても改善は見込めません。<br>しかも、むち打ちや頭痛などの痛みは事故に遭った後、時間が経ってから痛みが出て来る事もあります。</p>
+            </div>
+        </div>
+        <div class="pb-4">
+            <p>痛みは身体の不調を我慢して、何もしないとドンドン悪化してお身体に後遺症を残す可能性もあります。</p>
+            <p>事故に遭ったらできるだけ早くお身体の状態を検査して、しっかりと寄り添ってもらえる病院や整骨院などで施術を受ける事をオススメします。</p>
+            <p>ご相談出来る所がなくお困りでしたら、にこにこ整骨院へご相談ください。</p>
+        </div>
+        <div class="py-4">
+            <div class="head-bg p-4 text-center">
+                <h4 class="simple-head m-0"><b class="color-wh">痛みや不調を繰り返さない体へ変われる！<br>施術３つのポイント</b></h4>
+            </div>
+        </div>
+        <div class="pb-4">
+            <p><img th:src="@{images/sango/figure_4@2x .jpg}" class="spnon"><img th:src="@{images/sango/sp_figure_4@2x.jpg}" class="pcnon"></p>
+        </div>
+        <div class="mb-5">
+            <p>にこにこ整骨院では、<span class="pc-br">痛みや不調の原因にアプローチした施術に加え、既に結果として出ている痛みや不調を緩和していきます。</span></p>
+            <p>なぜなら、施術を1回受けるだけでは痛みや不調を繰り返さない体になる事は難しいので、<span class="pc-br">まずは普段の生活を不安なく送る為に痛みや不調を緩和させる必要があるからです。</span></p>
+            <p>そして骨格と姿勢の矯正を行いながら痛みや不調を改善していきます。</p>
+            <p>さらに、正しい体の使い方のアドバイスや姿勢を保つ為には欠かせないインナーマッスルを鍛えて痛みや不調を繰り返さない体へと変えていきます。</p>
+        </div>
+        <div class="mb-5 text-center">
+            <img th:src="@{images/jiko/head_4@2x.png}">
+        </div>
+        <div class="bg-dot-head my-4">
+            <div class="d-table w-100">
+                <div class="d-table-row">
+                    <div class="d-table-cell num simple text-center">
+                        <p class="mb-0"><b>1</b></p>
+                    </div>
+                    <div class="d-table-cell text align-middle p-3">
+                        <h5 class="m-0 p-0"><b>ソフトな刺激の筋肉、筋膜調整</b></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="d-sm-flex row">
+                <div class="col-sm-6">
+                    <p><img th:src="@{images/youtsu/figure_2@2x.jpg}"></p>
+                </div>
+                <div class="col-sm-6">
+                    <p>事故にあった衝撃で引き起こされた体の不調や痛みを改善させるために、当院では緊張して硬くなっている筋肉をほぐしたり、骨や筋肉、神経すべてを包み込んでいる筋膜の捻じれを調整していきます。</p>
+                    <p>そうすることで神経や筋肉への負担を減らし、筋肉の緊張をほぐすことで血行もよくなり、疲労物質が正常に運搬されるようになるので、体の不調や痛みの改善が可能になります。</p>
+                </div>
+            </div>
+        <div class="border-block mb-5">
+            <h4 class="head my-4 p-4"><b>書類の手続きや保険のお悩みもお任せください！</b></h4>
+                <div class="d-sm-flex row">
+                    <div class="col-sm-6">
+                        <p><img th:src="@{images/jiko/figure_11@2x.jpg}"></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>保険の手続きが難しいと思っている方もご安心ください。<br>書類の手続きや保険のお悩み事もご相談いただけます。</p>
+                        <p>分からない事がたくさん出て来るとストレスとなり、施術どころではなくなってしまいます。</p>
+                        <p>患者様が抱える不安やお悩みを全力でサポートして、施術に専念できる環境を整えていきます。</p>
+                    </div>
+                </div>
+            <div class="pb-3">
+                <p>そして事故に遭われた際は、早期の対応がとても大切です。</p>
+                <p>お悩みを解決してスッキリしたい方は、にこにこ整骨院へご相談ください。</p>
+            </div>
+        </div>
+
+        <div th:replace="fragments/reasion::reasion"></div>
+        <div th:replace="fragments/merit::merit"></div>
+				<div th:replace="fragments/price_fragment::campaign"></div>
+				<div th:include="fragments/common_fragment::voice"></div>
+        <div class="border-block mb-5">
+            <h4 class="head m-0 p-4 text-center"><b>当院に通うとこんな変化を実感できます</b></h4>
+            <div class="border-block-container p-1">
+                <div class="bg p-4">
+                    <ul class="list-unstyled list-check m-0">
+                        <li class="mb-2">痛みや不調の<span class="color-red">原因が明確になり、スッキリ改善！</span></li>
+                        <li class="mb-2"><span class="color-red">免疫力も上がり疲れにくい身体</span>になれる</li>
+                        <li class="mb-2">身体と心の悩みが解決できて<span class="color-red">気持ちが明るくなる</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h4 class="simple-head p-0 color-gry"><b>痛みや不調を改善して明るく健康な生活を送りたい方！<br>一度ご相談ください！</b></h4>
+        </div>
+        <div class="mb-5">
+            <p>身体と心の問題が解決できたら何がしたいですか？</p>
+            <p>やろうと思っても痛みでやる気が起こらなかった家事や仕事に集中出来たり、旅行や趣味に時間を作ったりとライフスタイルの幅が大きく広がります。</p>
+            <p>つまり今まで我慢していた事も出来て、気持ちも明るくなります。<br>ぜひあなたも痛みや不調を改善して、健康で楽しい生活をお送りください。</p>
+        </div>
+    </div>
+    </article><!-- [ /#post-49 ] -->
+  
+
+  </div>
+</div>
+</body>
+</html>

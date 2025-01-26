@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+  <div th:fragment="sidemenu"　th:remove="tag">
+    <div class="col-md-4 subSection pl-0 pr-5">
+<!--      <div th:replace="fragments/news::news(post=${post})"></div>-->
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0">
+            <b>初めてご来院される方</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled m-0 sidebar-menu">
+	          <li><a href="/">HOME</a></li>
+	          <li><a th:href="@{/first}">初めての方へ</a></li>
+	          <li><a th:href="@{/profile}">院長挨拶</a></li>
+	          <li><a th:href="@{/faq}">よくある質問</a></li>
+	          <li><a th:href="@{/access}">アクセス</a></li>
+	          <li><a th:href="@{/price}">施術料金</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mb-4">
+        <a th:href="@{jiko}"><img
+          th:src="@{content/themes/lightning_child/images/Bnr_jiko@2x.jpg}"></a>
+      </div>
+      <div class="mb-4">
+        <img
+          th:src="@{content/themes/lightning_child/images/jiko_banner1.png}"
+          class="w-100">
+      </div>
+      <div class="mb-4">
+        <a th:href="@{sango}"><img
+         th:src="@{content/themes/lightning_child/images/sidebnr_sango@2x.png}"></a>
+      </div>
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0">
+            <b>症状別施術案内</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled m-0 sidebar-menu">
+            <li><a th:href="@{/katakori}">肩こり、肩の痛み</a></li>
+            <li><a th:href="@{/youtsu}">腰痛</a></li>
+            <li><a th:href="@{/zakotsu}">坐骨神経痛</a></li>
+            <li><a th:href="@{/gikkuri}">ぎっくり腰、寝違え</a></li>
+            <li><a th:href="@{/headache}">頭痛</a></li>
+            <li><a th:href="@{/jiko}">交通事故</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebarblock mb-4">
+        <a th:href="@{voice}"><img
+          th:src="@{content/themes/lightning_child/images/sidebnr_voice@2x.jpg}"></a>
+      </div>
+      <div class="sidebarblock mb-4">
+        <a th:href="@{fukuri}"><img
+          th:src="@{content/themes/lightning_child/images/Bnr_fukuri.png}"></a>
+      </div>
+      <div class="sidebarblock mb-4">
+        <div class="ekiten-gadget" data-gadget-type="review_panel"
+          data-shop-id="30293363" style="display: none"></div>
+        <script src="https://static.ekiten.jp/js/gadget.js" async="async"
+          defer="defer" charset="UTF-8"></script>
+      </div>
+  
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0 color-grn">
+            <b>店舗情報</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled m-0 sidebar-menu sidebar-info">
+          <li>
+            <b>店舗名</b>
+            <br>
+            にこにこ整骨院・整体院
+          </li>
+          <li>
+            <b>住所</b>
+            <br>
+            〒332-0012
+            <br>
+             埼玉県川口市本町４丁目６−１０
+          </li>
+          <li>
+            <b>電話番号</b>
+            <br>
+            <a href="tel:048-202-1604" class="tel"><span>048-202-1604</span></a>
+            <div class="line-area">
+              <img th:src="@{content/themes/lightning_child/images/bnr-line@2x.jpg}">
+              <a href="https://line.me/R/ti/p/@731tnyph" target="_blank" class="line-btn">
+                <img th:src="@{images/line_btn@2x.png}">
+              </a>
+            </div>
+          </li>
+          <li>
+            <b>受付時間</b><br>平日 10：00～21：00<br>土、日、祝 9:00～20:00
+          </li>
+          <li>
+            <b>休診日</b><br>無<br>土曜、祝日も営業
+          </li>
+          <li>
+          <b>アクセス</b><br>・JR川口駅東口より徒歩3分！</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--  モバイルメニュークリックしたときのメニュー -->
+    <nav class="drawer-nav" role="navigation">
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0">
+            <b>お知らせ</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled news-list my-0">
+            <li class="m-0">
+              <p class="m-0">
+                <span class="date">2022.08.14</span><br> <a
+                  href="">ホームページOPEN！</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0">
+            <b>初めてご来院される方</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled m-0 sidebar-menu">
+	          <li><a href="/">HOME</a></li>
+	          <li><a th:href="@{/first}">初めての方へ</a></li>
+	          <li><a th:href="@{/profile}">院長挨拶</a></li>
+	          <li><a th:href="@{/faq}">よくある質問</a></li>
+	          <li><a th:href="@{/access}">アクセス</a></li>
+	          <li><a th:href="@{/price}">施術料金</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mb-4">
+        <a th:href="@{jiko}"><img
+          th:src="@{content/themes/lightning_child/images/Bnr_jiko@2x.jpg}"></a>
+      </div>
+      <div class="mb-4">
+        <img
+          th:src="@{content/themes/lightning_child/images/jiko_banner1.png}"
+          class="w-100">
+      </div>
+      <div class="mb-4">
+        <a th:href="@{sango}"><img
+          th:src="@{content/themes/lightning_child/images/sidebnr_sango@2x.jpg}"></a>
+      </div>
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0">
+            <b>症状別施術案内</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled m-0 sidebar-menu">
+            <li><a th:href="@{/katakori}">肩こり、肩の痛み</a></li>
+            <li><a th:href="@{/youtsu}">腰痛</a></li>
+            <li><a th:href="@{/zakotsu}">坐骨神経痛</a></li>
+            <li><a th:href="@{/gikkuri}">ぎっくり腰、寝違え</a></li>
+            <li><a th:href="@{/headache}">頭痛</a></li>
+            <li><a th:href="@{/jiko}">交通事故</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebarblock mb-4">
+        <a th:href="@{voice}"><img
+          th:src="@{content/themes/lightning_child/images/sidebnr_voice@2x.jpg}"></a>
+      </div>
+      <div class="sidebarblock mb-4">
+        <a th:href="@{fukuri}"><img
+          th:src="@{content/themes/lightning_child/images/Bnr_fukuri.png}"></a>
+      </div>
+      <div class="sidebarblock mb-4">
+        <div class="ekiten-gadget" data-gadget-type="review_panel"
+          data-shop-id="56870048" style="display: none"></div>
+        <script src="https://static.ekiten.jp/js/gadget.js" async="async"
+          defer="defer" charset="UTF-8"></script>
+      </div>
+      <div class="sidebarblock mb-4">
+        <div class="sidebar-head py-3">
+          <h4 class="mb-0 color-grn">
+            <b>店舗情報</b>
+          </h4>
+        </div>
+        <div class="sidebar-container">
+          <ul class="list-unstyled m-0 sidebar-menu sidebar-info">
+            <li>
+              <b>店舗名</b>
+              <br>
+              にこにこ整骨院・整体院
+            </li>
+            <li>
+              <b>住所</b>
+              <br>
+              〒332-0012
+              <br>
+               埼玉県川口市本町４丁目６−１０
+            </li>
+            <li>
+              <b>電話番号</b>
+              <br>
+              <a href="tel:048-202-1604" class="tel"><span>048-202-1604</span></a>
+              <div class="line-area">
+                <img th:src="@{content/themes/lightning_child/images/bnr-line@2x.jpg}">
+                <a href="https://line.me/R/ti/p/@731tnyph" target="_blank" class="line-btn">
+                  <img th:src="@{images/line_btn@2x.png}">
+                </a>
+              </div>
+            </li>
+            <li>
+              <b>受付時間</b><br>平日 10：00～21：00<br>土、日、祝 9:00～20:00
+            </li>
+            <li>
+              <b>休診日</b><br>無<br>土曜、祝日も営業
+            </li>
+            <li>
+            <b>アクセス</b><br>・JR川口駅東口より徒歩3分！</li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+  </div>
+</html>

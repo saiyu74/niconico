@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<div  th:fragment="footer">
+  <div class="sp-fixed-btn pcnon">
+    <div class="d-flex">
+      <div>
+        <a href="tel:048-202-1604" class="d-block"><img
+          th:src="@{content/themes/lightning_child/images/sp_btn_tel@2x.png}"></a>
+      </div>
+      <div>
+        <a href="https://line.me/R/ti/p/@731tnyph"
+          target="_blank" class="d-block"><img
+          th:src="@{content/themes/lightning_child/images/sp_btn_line@2x.png}"></a>
+      </div>
+    </div>
+  </div>
+  <!-- footer開始 -->
+  <footer class="section siteFooter">
+    <div class="container py-3 px-0">
+      <div class="w-100">
+        <div class="navbar-brand siteHeader_logo">
+          <div class="text-left">
+            <p class="mb-0">
+              <small class="d-block">体の現在地を知り痛みやコリがない健康なカラダへ！</small>
+            </p>
+          </div>
+          <a href="/"><span> <img
+              th:src="@{images/header_logo@2x.png}"
+              alt="にこにこ整骨院・整体院" />
+          </span></a>
+          <p class="mt-2 mb-0">
+            <small class="d-block">
+              〒332-0012 埼玉県川口市本町４丁目６−１０
+              <br>
+              JR川口駅東口より徒歩3分！
+            </small>
+          </p>
+        </div>
+        <div class="headerRight spnon pt-1">
+          <ul class="list-unstyled m-0">
+            <li class="d-flex"><span class="head"><b>最終受付時間</b></span><span>平日 10：00～21：00<br/>土、日、祝 9:00～20:00</span></li>
+            <li class="d-flex"><span class="head"><b>休診日</b></span><span>無</span></li>
+          </ul>
+          <div class="telHead text-center mb-2">土曜、祝日も営業！お気軽にお電話ください</div>
+          <div>
+            <a href="tel:048-202-1604"><img
+              th:src="@{content/themes/lightning_child/images/tel@2x.png}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="footerMenu">
+      <div class="container py-3 px-0">
+        <ul class="list-unstyled m-0 d-flex flex-wrap">
+          <li><a href="/">HOME</a></li>
+          <li><a th:href="@{first}">初めての方へ</a></li>
+          <li><a th:href="@{profile}">院長挨拶</a></li>
+          <li><a th:href="@{access}">アクセス</a></li>
+          <li><a th:href="@{price}">施術料金</a></li>
+          <li><a th:href="@{faq}">よくある質問</a></li>
+          <li><a th:href="@{voice}">ご利用者様の声</a></li>
+          <li><a th:href="@{blog}">ブログ</a></li>
+        </ul>
+        <p class="mb-0 footerMenuHead text-center">症状別施術案内</p>
+        <ul class="list-unstyled m-0 d-flex flex-wrap">
+          <li><a th:href="@{sango}">産後の骨盤矯正</a></li>
+          <li><a th:href="@{katakori}">肩こり、肩の痛み</a></li>
+          <li><a th:href="@{youtsu}">腰痛</a></li>
+          <li><a th:href="@{zakotsu}">坐骨神経痛</a></li>
+          <li><a th:href="@{gikkuri}">ぎっくり腰、寝違え</a></li>
+          <li><a th:href="@{headache}">頭痛</a></li>
+          <li><a th:href="@{jiko}">交通事故</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sectionBox copySection py-2 mt-3">
+      <div class="row">
+        <div class="col-md-12 text-center">Copyright &copy; にこにこ整骨院・整体院
+          All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer終了 -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script th:src="@{content/themes/lightning_child/js/fitie.js}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      jQuery('.drawer').drawer();
+    });
+  </script>
+  <!-- モバイルメニュー開始 -->
+  <div class="vk-mobile-nav-menu-btn">MENU</div>
+  <div class="vk-mobile-nav" id="vk-mobile-nav">
+    <nav class="global-nav">
+      <ul id="menu-headermenu-2" class="vk-menu-acc  menu">
+        <li id="menu-item-23"
+          class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-23"><a
+          href="/" aria-current="page">トップ</a></li>
+        <li id="menu-item-24"
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
+          th:href="@{first}">初めての方へ</a></li>
+        <li id="menu-item-25"
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a
+          th:href="@{price}">施術料金</a></li>
+        <li id="menu-item-26"
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a
+          th:href="@{profile}">院長挨拶</a></li>
+        <li id="menu-item-27"
+          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a
+          th:href="@{access}">アクセス</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- モバイルメニュー終了 -->
+  <script type='text/javascript' th:src='@{content/themes/lightning/assets/js/lightning.min.js}'></script>
+  <script type='text/javascript' th:src='@{content/themes/lightning/library/bootstrap-4/js/bootstrap.min.js}'></script>
+  <script type='text/javascript' th:src='@{includes/js/wp-embed.min.js}'></script>
+<!--  <script type='text/javascript' th:src='@{js/all.min.js}'></script>-->
+</div>
+</html>

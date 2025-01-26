@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+<head>
+<title th:text="#{content.first.title}"></title>
+<meta name="robots"
+	content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="description" th:content="@{content.first.description}" />
+<link rel="canonical" th:href="#{content.first.url}" />
+<meta property="og:url" th:content="#{content.first.url}" />
+<meta property="og:title" th:content="#{content.first.title}" />
+<meta property="og:description"
+	th:content="#{content.first.description}" />
+</head>
+<body>
+	<div th:remove="tag" id="container">
+
+		<div layout:fragment="mainSection">
+
+			<article id="post-37"
+				class="post-37 page type-page status-publish hentry">
+				<div class="entry-body">
+					<h2 class="bg-head color-grn mb-4">よくある質問</h2>
+					<p>
+						<b class="color-Lgry">お越し頂く前に、よく患者様よりいただく質問をまとめました。<br>ご参考にしてみてください。
+						</b>
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.予約しないとダメでしょうか？</h3>
+					<p>ご予約されなくても施術は可能です。</p>
+					<p>
+						ただし、お越し頂いた際にご予約の患者がいらっしゃる場合はお待ちいただく場合があります。<br>あらかじめご予約を頂くと待ち時間がほとんどなく、施術を受けられますのでオススメします。
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.保険証は使えますか？</h3>
+					<p>
+						国民健康保険、社会保険、組合保険、労災保険、自賠責保険など各種健康保険のご利用が可能です。<br>初めてお越し頂く場合は、保険証をお持ちください。
+					</p>
+
+					<h3 class="simple-head mt-5 mb-4">Q.駐車場はありますか？</h3>
+					<p>
+						近くのコインパーキングをご利用お願いいたします。
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.どんな服装で行けばいいですか？</h3>
+					<p>
+						ジャージやスウェット等の動きやすくリラックスできる服装を持参してください。<br>なお、お仕事やお買い物帰りでもお越し頂けるように、更衣室やお着替えセット（上下）もご用意しております。
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.支払い方法は現金だけですか？</h3>
+					<p>現金の他にクレジットカードやキャッシュレス決済でのお支払いも可能です。</p>
+					<div class="bg-dot-head mt-5">
+						<h5 class="px-4 py-3">
+							<b>施術について</b>
+						</h5>
+					</div>
+					<h3 class="simple-head mt-3 mb-4">Q.施術の時間はどれくらいかかりますか？</h3>
+					<p>
+						初回は、お体の状態をお伺いして詳しく検査を行いますので50～60分ほどお時間をいただいております。
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.施術を1回受けたら治りますか？</h3>
+					<p>
+						１回で体の変化を感じる方はたくさんいらっしゃいます。<br>ただし、痛みや身体の不調には個人差があります。
+					</p>
+					<p>痛みや不調の深刻さや通う頻度によっても変わりますが、ご提案した施術計画に沿って通って頂いている患者様には、痛みや不調のストレスが無くなって健康な生活が送れていると大変喜ばれています。</p>
+					<p>ですので、まずは施術計画通りに通ってみてください。</p>
+					<h3 class="simple-head mt-5 mb-4">Q.10年以上痛みに悩んでいますがよくなりますか？</h3>
+					<p>
+						一度身体のお悩みを詳しくお伺いさせてください。<br>同じ腰痛でも痛みの原因は人それぞれのように、施術方法や通う頻度も様々です。<br>お身体の状態やライフスタイルに合わせた施術計画をお伝えさせていただきます。
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.骨盤矯正は産後どれくらいから受けらますか？</h3>
+					<p>
+						産後1ヶ月くらい経ってからでお身体に問題がなければ大丈夫です。<br>帝王切開の方は傷口が回復してからであれば施術が受けられます。
+					</p>
+					<p>
+						出産後１か月間は、かなり体力を消耗していますので出来るだけお身体を休める事に集中してください。<br>ただ、つらい痛みや不調でお悩みの場合は、お気軽にご相談ください。
+					</p>
+					<h3 class="simple-head mt-5 mb-4">Q.テーピングの対応は行っていただけますか？</h3>
+					<p>
+						大丈夫です。<br>しっかりヒアリングし、患者様に合った提案をさせていただきます。
+					</p>
+					<p>
+						早朝、休日の部活前のテーピング対応もお気軽にご相談ください。
+					</p>
+				</div>
+			</article>
+			<!-- [ /#post-37 ] -->
+
+		</div>
+	</div>
+</body>
+</html>

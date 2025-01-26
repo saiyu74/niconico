@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+<head>
+  <title th:text="#{content.katakori.title}"></title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="description" th:content="@{content.katakori.description}" />
+  <link rel="canonical" th:href="#{content.katakori.url}" />
+	<meta property="og:url" th:content="#{content.katakori.url}" />
+	<meta property="og:title" th:content="#{content.katakori.title}" />
+	<meta property="og:description" th:content="#{content.katakori.description}" />
+</head>
+<body>
+  <div  th:remove="tag" id="container">
+  
+  <div layout:fragment="mainSection">
+  <article id="post-39" class="post-39 page type-page status-publish hentry">
+    <div class="entry-body">
+      <h2 class="bg-head color-grn mb-4">肩こり、肩の痛み</h2>
+      <div class="py-3">
+          <img th:src="@{images/katakori/intro@2x.jpg}">
+      </div>
+      <div class="pt-3 pb-5">
+          <img th:src="@{images/katakori/top_trouble@2x.jpg}">
+      </div>
+      <div class="mb-4">
+                        <img th:src="@{images/katakori/head_1@2x.png}">
+                    </div>
+                    <div class="mb-5 text-center">
+                        <img th:src="@{images/katakori/head_3@2x.png}">
+                    </div>
+                    <div class="text-center">
+                        <p>ガチガチの肩こりや肩こりが原因で起こる頭痛など、湿布や痛み止めに頼っていませんか？<br>今の状態を放置したら、コリや痛みは気がつかない間に悪化しています。</p>
+                        <p>肩こりとは一生付き合わないといけない等と諦めないで、お気軽にご相談ください！</p>
+                    </div>
+                    <div class="mb-5 text-center">
+                        <img th:src="@{images/katakori/head_2@2x.png}" class="w-75">
+                    </div>
+                    <div class="mb-5 text-center">
+                        <img th:src="@{images/katakori/head_3@2x.png}">
+                    </div>
+                    <div class="mb-5 text-center">
+                        <figure class="mb-0">
+                            <img th:src="@{images/katakori/figure_6-1@2x.jpg}" class="w-75 px-4">
+                        </figure>
+                        <img th:src="@{images/katakori/figure_6-2@2x.jpg}" class="px-md-4">
+                    </div>
+                    <div class="mb-5">
+                        <p>身体が歪んでくると、姿勢が悪くなって肩や背骨周辺の筋肉に負担をかけて筋肉が緊張してくる為、その危険信号として脳が肩周辺にコリや痛みとして伝えてきます。</p>
+                        <p>人の身体の土台は骨盤です。</p>
+                        <p>骨盤は上半身の重さを支えているので、骨盤が歪んだり、ずれると、脳が無意識に身体のバランスを取ろうとして、あちこちに負担がかかってきます。</p>
+                        <p>その負担が、肩こりに限らず腰痛や首の痛みやコリに繋がっているのです。</p>
+                        <p>肩凝りの方は、よく肩を揉んだり湿布を貼ったりしていますが、それは一時的に筋肉の緊張をほぐしているだけで、コリや痛みを引き起こしている原因の身体の歪みはそのままなので、結果としてまた肩こりを繰り返してしまうのです。</p>
+                    </div>
+                   <div class="py-4">
+                        <div class="head-bg p-4 text-center">
+                            <h4 class="simple-head m-0"><b class="color-wh">痛みやコリを繰り返さない体へ変われる！<br>施術３つのポイント</b></h4>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <p><img th:src="@{images/katakori/figure_6@2x.jpg}" class="spnon"><img th:src="@{images/sp_figure_6@2x.jpg}" class="pcnon"></p>
+                    </div>
+                    <p>にこにこ整骨院では、<br>痛みの原因にアプローチした施術に加え、既に結果として出ている痛みやコリを緩和していきます。</p>
+                    <p>なぜなら、施術を1回受けるだけでは痛みやコリを繰り返さない体になる事は難しいので、<span class="pc-br">まずは普段の生活を不安なく送る為に痛みやコリを緩和させる必要があるからです。</span></p>
+                    <p>そして骨格と姿勢の矯正を行いながら痛みやコリを改善していきます。</p>
+                    <p>さらに、正しい体の使い方のアドバイスや姿勢を保つ為には欠かせないインナーマッスルを鍛えて痛みやコリを繰り返さない体へと変えていきます。</p>
+                    <h3 class="simple-head mt-5 mb-4 text-center">整体、整骨院、接骨院でも施術の内容が違います！</h3>
+                    <div class="pb-4">
+                        <p><img th:src="@{images/katakori/figure_7@2x.jpg}"></p>
+                    </div>
+                    <div class="pb-5">
+                        <p>例えば腰痛の施術を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
+                        <p>さらに痛みは改善されたけど、しばらくしたら再び痛みが出てきた方は「痛みを改善」する施術を受けています。</p>
+                        <p>にこにこ整骨院では痛み改善後、痛みが再発しない体づくりを目的に施術を行っています。</p>
+                        <p>施術の内容は院によってそれぞれ違いますので、目的に合わせた院を選択する事が大切です。</p>
+                    </div>
+                    <div class="mb-5 text-center">
+                        <img th:src="@{images/katakori/head_4@2x.png}" class="spnon">
+                        <img th:src="@{images/katakori/sp_head_4@2x.png}" class="pcnon">
+                    </div>
+                    <div class="bg-dot-head my-4">
+                        <div class="d-table w-100">
+                            <div class="d-table-row">
+                                <div class="d-table-cell num simple text-center">
+                                    <p class="mb-0"><b>1</b></p>
+                                </div>
+                                <div class="d-table-cell text align-middle p-3">
+                                    <h5 class="m-0 p-0"><b>ソフトな刺激の骨格・骨盤矯正</b></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="d-sm-flex row">
+                            <div class="col-sm-6">
+                                <p><img th:src="@{images/katakori/figure_2@2x.jpg}"></p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>骨盤や骨格の歪みが肩こりの原因の場合は、骨格・骨盤矯正専用のトムソンベッドを使って施術を行います。</p>
+                                <p>トムソンベッドは、お身体の負担が少なく矯正できるので、お子さまからお年寄りまで安心して受けられる施術法です。</p>
+                                <p>トムソンベッドを使わない整体院や整骨院では、バキバキする施術法もありますが、当院の施術はバキバキせずソフトな刺激です。</p>
+                            </div>
+                        </div>
+                    <div class="pb-3">
+                        <p>骨格・骨盤矯正で骨を正常な位置に戻すことで、筋肉にかかる負担を減らします。</p>
+                        <p>筋肉への負担を減らし、緊張をほぐすことで血行もよくなり、疲労物質が正常に運搬されるようになるので、肩こりや肩まわりの痛みからの疲労や、目の疲れ、頭痛なども改善することができます。</p>
+                    </div>
+                    <div class="pb-3">
+                        <p>電気の刺激が苦手な方は、安心して施術を受けられるように微調整しながら施術いたします。</p>
+                    </div>
+      <div th:include="fragments/reasion::reasion"></div>
+      <div th:include="fragments/merit::merit"></div>
+      <div th:include="fragments/price_fragment::campaign"></div>
+      <div th:include="fragments/common_fragment::voice"></div>
+      <div th:include="fragments/common_fragment::warning"></div>
+    </div>
+  </article>
+  </div>
+</div>
+</body>
+</html>

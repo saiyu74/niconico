@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<header th:fragment="header" class="navbar siteHeader" role="banner">
+  <!-- モバイルトップメニュー -->
+  <nav class="sp-navbar-header pcnon w-100">
+    <ul class="list-unstyled d-flex text-center m-0">
+      <li class="m-0">
+        <button type="button" class="drawer-toggle drawer-hamburger pcnon">
+          <span class="sr-only">ナビゲーション</span> <span class="drawer-hamburger-icon"></span>
+        </button>
+        <p class="mb-0">メニュー</p>
+      </li>
+      <li class="m-0">
+        <a href="/">
+          <p class="mb-0">
+            <img th:src="@{content/themes/lightning_child/images/ico-top@2x.png}"><br>トップ
+          </p>
+        </a>
+      </li>
+      <li class="m-0">
+        <a th:href="@{/access}">
+          <p class="mb-0">
+            <img th:src="@{content/themes/lightning_child/images/ico-access@2x.png}"><br>アクセス
+          </p>
+        </a>
+      </li>
+      <li class="m-0">
+        <a th:href="@{/price}">
+          <p class="mb-0">
+            <img th:src="@{content/themes/lightning_child/images/ico-price@2x.png}"><br>
+            施術料金
+          </p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container siteHeadContainer py-2">
+    <div class="navbar-header w-100">
+      <div class="navbar-brand siteHeader_logo p-0">
+        <div class="text-left">
+          <p class="mb-0 mt-2">
+            <small class="d-block">体の現在地を知り痛みやコリがない健康なカラダへ！</small>
+          </p>
+        </div>
+        <a href="/">
+          <h1>
+            <img th:src="@{images/header_logo@2x.png}" alt="にこにこ整骨院・整体院" />
+          </h1>
+        </a>
+        <p class="mt-2 mb-0 spnon">
+          <small class="d-block">
+            〒332-0012 埼玉県川口市本町４丁目６−１０
+            <br>
+            JR川口駅東口より徒歩3分！
+          </small>
+        </p>
+      </div>
+      <div class="headerRight spnon pt-1">
+        <ul class="list-unstyled m-0">
+          <li class="d-flex"><span class="head"><b>最終受付時間</b></span><span>平日 10：00～21：00<br />土、日、祝 9:00～20:00</span>
+          </li>
+          <li class="d-flex"><span class="head"><b>休診日</b></span><span>無</span></li>
+        </ul>
+        <div class="telHead text-center mb-2">土曜、祝日も営業！お気軽にお電話ください</div>
+        <div>
+          <a href="tel:048-202-1604">
+            <img th:src="@{content/themes/lightning_child/images/tel@2x.png}"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-container w-100">
+    <div class="container py-0">
+      <div id="gMenu_outer" class="gMenu_outer w-100 itemClose">
+        <nav class="menu-headermenu-container">
+          <ul id="menu-headermenu" class="menu nav gMenu">
+            <li id="menu-item-23"
+              class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
+              <a th:href="@{/}"><strong class="gMenu_name">トップ</strong></a></li>
+            <li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                th:href="@{/first}"><strong class="gMenu_name">初めての方へ</strong></a></li>
+            <li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                th:href="@{/price}"><strong class="gMenu_name">施術料金</strong></a></li>
+            <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                th:href="@{/profile}"><strong class="gMenu_name">院長挨拶</strong></a></li>
+            <li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page"><a
+                th:href="@{/access}"><strong class="gMenu_name">アクセス</strong></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+</body>
+</html>

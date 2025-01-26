@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+
+<head>
+	<title th:text="#{content.zutsu.title}"></title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="description" th:content="@{content.zutsu.description}" />
+	<link rel="canonical" th:href="#{content.zutsu.url}" />
+	<meta property="og:url" th:content="#{content.zutsu.url}" />
+	<meta property="og:title" th:content="#{content.zutsu.title}" />
+	<meta property="og:description" th:content="#{content.zutsu.description}" />
+  <link rel='stylesheet' th:href='@{css/common/common.css}' type='text/css' media='all' />
+</head>
+
+<body>
+	<div th:remove="tag" id="container">
+		<div layout:fragment="mainSection">
+			<h2 class="bg-head color-grn mb-4">ご利用者様の声</h2>
+			<div class="blog-breadcrumb mb-4">
+				<p class="mb-0 pb-2"><small><a href="/" class="color-grn">トップ</a> &gt;
+						ご利用者様の声</small></p>
+			</div>
+
+			<div class="d-md-flex flex-wrap row">
+				<!--ループ-->
+				準備中
+				<!--//ループ-->
+			</div>
+			<div class="text-center">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

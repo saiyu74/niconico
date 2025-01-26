@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+
+<head>
+	<title th:text="#{content.top.title}"></title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="description" th:content="@{content.top.description}" />
+	<link rel="canonical" th:href="#{content.top.url}" />
+	<meta property="og:url" th:content="#{content.top.url}" />
+	<meta property="og:title" th:content="#{content.top.title}" />
+	<meta property="og:description" th:content="#{content.top.description}" />
+</head>
+
+<body>
+	<div th:remove="tag" id="container">
+		<div layout:fragment="mainSection">
+
+			<h2 class="bg-head color-grn mb-4">頭痛</h2>
+			<div class="py-3">
+				<img th:src="@{images/headache/intro@2x.jpg}">
+			</div>
+			<div class="pt-3 pb-5">
+				<img th:src="@{images/headache/top_trouble@2x.jpg}">
+			</div>
+			<div class="mb-4">
+				<img th:src="@{images/headache/head_1@2x.png}">
+			</div>
+			<div class="text-center">
+				<p>頭痛で病院に行ってもレントゲンやMRIの検査では異常がなく、痛み止めをもらうだけの<span class="pc-br">ケースが多く見られます。</span></p>
+				<p>つまり痛みを緩和しているだけなので、原因から改善しないと痛みは繰り返されます。<br>にこにこ整骨院では頭痛の原因をしっかりと見極めて、痛みが繰り返さない為の<span
+						class="pc-br">施術を行います。</span></p>
+				<p>頭痛とは良くならないから上手く付き合っていくしかないと思わずに、<span class="pc-br">にこにこ整骨院にご相談ください！</span></p>
+			</div>
+			<div class="mb-5 text-center">
+				<img th:src="@{images/youtsu/head_2@2x.png}" class="w-75">
+			</div>
+			<div class="mb-5">
+				<img th:src="@{images/katakori/figure_1@2x.jpg}">
+			</div>
+			<div class="mb-5 text-center">
+				<img th:src="@{images/headache/head_2@2x.png}">
+			</div>
+			<div class="mb-5">
+				<p>実は頭痛の種類は4つあります。<br>※突然ハンマーで叩かれたような強い痛みや手足の痙攣、激しい嘔吐が出るような、<span
+						class="pc-br">二次性頭痛は、クモ膜下出血、脳腫瘍などの可能性がありますので医療機関での専門的な対処が必要になります。</span></p>
+				<p>ここでは、慢性的な一次性頭痛を紹介しています。</p>
+			</div>
+			<div class="mb-5 text-center">
+				<img th:src="@{images/headache/figure_1@2x.jpg}" class="spnon">
+				<div class="pcnon">
+					<figure>
+						<img th:src="@{images/headache/sp_figure_1.jpg}">
+					</figure>
+					<figure>
+						<img th:src="@{images/headache/sp_figure_2.jpg}">
+					</figure>
+					<figure>
+						<img th:src="@{images/headache/sp_figure_3.jpg}">
+					</figure>
+					<figure>
+						<img th:src="@{images/headache/sp_figure_4.jpg}">
+					</figure>
+				</div>
+			</div>
+			<div class="mb-5 text-center">
+				<figure class="mb-4">
+					<img th:src="@{images/headache/head_3@2x.png}">
+				</figure>
+				<img th:src="@{images/headache/figure_2@2x.jpg}" class="w-75 sp-100">
+			</div>
+			<div class="mb-5">
+				<p>病院の痛み止めを飲んでも、整体やもみほぐしに通っても時間が経つと痛みがぶり返す、こんな経験ありませんか？</p>
+				<p>実は頭痛を改善するのに大切な事は、骨格や骨盤の歪みを正しくする事です。</p>
+				<p>なぜなら、痛みを感じる神経の多くは背骨から出ています。<br>背骨が歪んでくると姿勢が悪くなって神経が圧迫されます。</p>
+				<p>神経が圧迫されると危険信号として脳が痛みとして伝えてきます。<br>ですから骨格や骨盤の歪みを調整して神経を圧迫させないようにしないといけません。</p>
+				<p>病院の痛み止めや、整体やもみほぐしで一時的に良くなっても時間が経つと痛みがぶり返すのは、痛みを引き起こしている原因（骨格や骨盤の歪み）を改善していないから起こるのです。</p>
+			</div>
+
+
+
+
+
+
+			<div th:replace="fragments/point::point"></div>
+
+
+
+			<div class="mb-5 text-center">
+				<img th:src="@{images/headache/head_4@2x.png}">
+			</div>
+
+
+
+
+
+			<div class="bg-dot-head my-4">
+				<div class="d-table w-100">
+					<div class="d-table-row">
+						<div class="d-table-cell num simple text-center">
+							<p class="mb-0"><b>1</b></p>
+						</div>
+						<div class="d-table-cell text align-middle p-3">
+							<h5 class="m-0 p-0"><b>ソフトな刺激の骨格・骨盤矯正</b></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-sm-flex row">
+				<div class="col-sm-6">
+					<p><img th:src="@{images/katakori/figure_2@2x.jpg}"></p>
+				</div>
+				<div class="col-sm-6">
+					<p>骨盤や骨格の歪みが頭痛の原因の場合は、骨格・骨盤矯正専用のトムソンベッドを使って施術を行います。</p>
+					<p>トムソンベッドは、お身体の負担が少なく矯正できるので、お子さまからお年寄りまで安心して受けられる施術法です。</p>
+					<p>トムソンベッドを使わない整体院や整骨院では、バキバキする施術法もありますが、当院の施術はバキバキせずソフトな刺激です。</p>
+				</div>
+			</div>
+			<div class="pb-3">
+				<p>骨格・骨盤矯正で骨を正常な位置に戻すことで、筋肉にかかる負担を減らします。</p>
+				<p>筋肉への負担を減らし、緊張をほぐすことで血行もよくなり、疲労物質が正常に運搬されるようになるので、肩こりや肩まわりの痛みからの疲労や、目の疲れ、頭痛なども改善することができます。</p>
+			</div>
+			</div>
+			<div class="text-center">
+				<h5 class="h5-2em mt-0">
+					<img th:src="@{images/katakori/catch@2x.png}" class="w-50">
+
+				</h5>
+			</div>
+			<div th:replace="fragments/price_fragment::campaign"></div>
+			<div th:include="fragments/reasion::reasion"></div>
+			<div th:include="fragments/merit::merit"></div>
+			<div th:replace="fragments/price_fragment::campaign"></div>
+			<div th:include="fragments/common_fragment::voice"></div>
+			<div class="border-block mb-5">
+				<h4 class="head m-0 p-4 text-center"><b>当院に通うとこんな変化を実感できます</b></h4>
+				<div class="border-block-container p-1">
+					<div class="bg p-4">
+						<ul class="list-unstyled list-check m-0">
+							<li class="mb-2">繰り返す頭痛の<span class="color-red">原因が明確になり、スッキリ改善！</span></li>
+							<li class="mb-2"><span class="color-red">身体の重だるさから解放されて疲れにくい身体</span>になれる</li>
+							<li class="mb-2"><span class="color-red">痛み止めに頼らなくても</span>よくなる</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<h4 class="simple-head p-0 color-gry"><b>痛みを繰り返さず明るく健康な生活を<span class="pc-br">送りたいとお考えなら一度ご相談ください！</span></b>
+				</h4>
+			</div>
+			<div class="mb-5">
+				<p>痛みの事が気にならなくなったら何がしたいですか？</p>
+				<p>やろうと思っても痛みでやる気が起こらなかった家事や仕事に集中出来たり、旅行や趣味に時間を作ったりとライフスタイルの幅が大きく広がります。</p>
+				<p>つまり今まで我慢していた事も出来て、気持ちも明るくなります。<br>ぜひあなたも痛みを繰り返さない体を手に入れて、健康で楽しい生活をお送りください。</p>
+			</div>
+
+
+			<div th:include="fragments/common_fragment::warning"></div>
+		</div>
+	</div>
+</body>
+
+</html>

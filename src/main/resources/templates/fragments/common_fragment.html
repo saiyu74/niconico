@@ -1,0 +1,87 @@
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <div  th:fragment="top_trouble" th:tag="remove">
+    <div class="mb-5">
+      <img th:src="@{content/themes/lightning_child/images/top_trouble@2x.jpg}">
+    </div>
+  </div>
+
+  <div  th:fragment="voice" th:tag="remove">
+    <div th:if="${!#lists.isEmpty(posts)}" class="mb-4">
+        <img th:src="@{content/themes/lightning_child/images/title_3@2x.jpg}">
+    </div>
+  <div th:each="post : ${posts}">
+    <div class="mb-4 voice-block">
+      <h3 class="simple-head mt-5 mb-4">[[${post.title}]]</h3>
+      <div class="d-sm-flex row">
+          <div class="col-sm-4">
+              <p>
+					      <th:block th:if="${!#strings.isEmpty(post.imagepath)}">
+						      <img width="1219" height="793"
+						        th:src="${post.imagepath}" 
+						        class="attachment-full size-full wp-post-image" alt="" loading="lazy"
+						        sizes="(max-width: 1219px) 100vw, 1219px"> </a>
+					      </th:block>
+					      <th:block th:if="${#strings.isEmpty(post.imagepath)}">
+					      	写真なし
+					      </th:block>
+              </p>
+          </div>
+          <div class="col-sm-8">
+              <p th:text="${post.body}"></p>
+              <div class="pt-4 text-right">
+                  <p><small>※患者さん個人の感想であり、効果効能を保証するものではありません。</small></p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div  th:fragment="voice1" th:tag="remove">
+	  <div class="mb-4">
+	      <img th:src="@{content/themes/lightning_child/images/title_3@2x.jpg}">
+	  </div>
+	  <div class="mb-4 voice-block">
+	      <h3 class="simple-head mt-5 mb-4">20代女性</h3>
+	      <div class="d-sm-flex row">
+	          <div class="col-sm-4">
+	              <p><img th:src="@{images/voice/voice001.jpg}"></p>
+	          </div>
+	          <div class="col-sm-8">
+	              <p>肩こりからの頭痛にずっと悩まされており、こちらに通わせていただいてからは、
+	              だいぶ頻度と症状が改善されてきました。<br/>
+	              紹介した友達も満足して通っているので満足度は高いです。</p>
+	              <div class="pt-4 text-right">
+	                  <p><small>※患者さん個人の感想であり、効果効能を保証するものではありません。</small></p>
+	              </div>
+	          </div>
+	      </div>
+	  </div>
+  </div>
+  <div  th:fragment="warning" th:tag="remove">
+    <div class="mb-5">
+        <img th:src="@{content/themes/lightning_child/images/title_4@2x.jpg}">
+    </div>
+    <p>最後までお読みいただきありがとうございます。<br>痛みやコリを繰り返さない体を手に入れて頂き、健康で楽しい生活をお送りいただく。</p>
+    <p>これがにこにこ整骨院の想いであり、痛みやコリで悩んでいる方を全力でサポートしたいと考えております。</p>
+    <p>ただしなかには、当院の施術がお役に立てない方もいらっしゃいます。<br>もし今お読みの方でこういった施術をお求めの場合、ご要望にお応えできませんのであらかじめご了承ください。</p>
+    <div class="border-yel p-4 my-4">
+        <ul class="list-unstyled list-check m-0">
+            <li class="mb-2"><span class="color-red">1円でも安く</span>施術をして欲しい</li>
+            <li class="mb-2"><span class="color-red">気持ち良さ（リラクゼーション）</span>を求めている</li>
+            <li class="mb-0"><span class="color-red">長い時間</span>揉んで欲しい</li>
+        </ul>
+    </div>
+    <p>なぜなら、お求めの内容とにこにこ整骨院が提供する内容に大きなズレがあるため、大切なお時間やお金が無駄になってしまいます。<br>ですので、他の院に通われることをオススメします。</p>
+    <o>しかしそうではなく、</p>
+    <div class="border-yel p-4 my-4">
+        <ul class="list-unstyled list-check m-0">
+            <li class="mb-2">痛みやコリの<span class="color-red">ストレスから解放</span>されたい</li>
+            <li class="mb-2"><span class="color-red">体のダルさを早く改善</span>したい</li>
+            <li class="mb-0">自分の<span class="color-red">体の状態を知って健康に生活</span>したい</li>
+        </ul>
+    </div>
+    <p>このようなご要望でしたら、あなたにとってベストの場所です。<br>ココが最後だと思って、ぜひご予約ください。</p>
+    <p>痛みやコリのストレスから解放されて、健康に暮らせる体を手に入れた姿を1日でも早く見れることを楽しみにしております。</p>
+  </div>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org"
+  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layouts/main_layout}">
+<head>
+<title th:text="#{content.top.title}"></title>
+<meta name="robots"
+  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="description" th:content="@{content.top.description}" />
+<link rel="canonical" th:href="#{content.top.url}" />
+<meta property="og:url" th:content="#{content.top.url}" />
+<meta property="og:title" th:content="#{content.top.title}" />
+<meta property="og:description" th:content="#{content.top.description}" />
+</head>
+<body>
+  <div th:remove="tag" id="container">
+    <div layout:fragment="slider">
+      <div th:replace="fragments/slider::slider" th:tag="remove"></div>
+    </div>
+    <div layout:fragment="mainSection" >
+      <article id="post-28"
+        class="post-28 post type-post status-publish format-standard hentry category-news">
+<!--        <div class="mb-2">
+            <img th:src="@{images/index/prouser.png}" alt="プロ">
+        </div>-->
+        <div th:include="fragments/common_fragment::top_trouble"></div>
+        
+        <div class="mb-5 text-center sp-left">
+            <p>
+              このようなお悩みを抱えていて、整体や整骨院等に通ってもよくならない。<br>一時的によくなるけど時間が経つと痛みやコリがぶり返す、どこに相談したら分からない・・・
+            </p>
+            <p>そんな経験をした事はありませんか？</p>
+            <div class="text-center">
+              <p class="mb-0">
+                <img th:src="@{content/themes/lightning_child/images/img_1@2x.png}" class="w-50">
+              </p>
+              <h5 class="h5-2em mt-0">
+                <b>整形外科医</b>や<b>治療家</b>も<b>推薦する施術</b>で、<br> <b>痛み</b>の原因を<b>正確</b>に見つけて<br>
+                <b>改善</b>へと導きます。
+              </h5>
+            </div>
+            <div class="d-flex row mt-5 mb-4">
+              <div class="col-12">
+                <img th:src="@{images/image001.png}">
+              </div>
+            </div>
+          </div>        
+          <div th:include="fragments/reasion::reasion"></div>
+          <div th:include="fragments/knowlodge::knowlodge"></div>
+          <div th:include="fragments/point::point"></div>
+          <div th:include="fragments/merit::merit"></div>
+          <div th:include="fragments/price_fragment::campaign"></div>
+          <div th:include="fragments/common_fragment::voice"></div>
+          <div th:include="fragments/common_fragment::warning"></div>
+      </article>  
+    </div>
+  </div>
+</body>
+</html>

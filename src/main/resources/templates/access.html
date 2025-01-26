@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+<head>
+  <title th:text="#{content.access.title}"></title>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="description" th:content="@{content.top.description}" />
+  <link rel="canonical" th:href="#{content.access.url}" />
+  <meta property="og:url" th:content="#{content.access.url}" />
+  <meta property="og:title" th:content="#{content.access.title}" />
+  <meta property="og:description" th:content="#{content.access.description}" />
+</head>
+<body>
+  <div  th:remove="tag" id="container">
+  
+  <div layout:fragment="mainSection">
+    <!-- メインコンテンツ -->
+  <article id="post-21" class="post-21 page type-page status-publish hentry">
+      <div class="entry-body">
+	      <div th:replace="fragments/access_fragment::access"></div>
+	      <div th:replace="fragments/access_fragment::accessdetail"></div>
+      </div>
+    </article>
+  </div>
+</div>
+</body>
+</html>

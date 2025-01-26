@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
+
+<head>
+	<title th:text="#{content.top.title}"></title>
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="description" th:content="@{content.top.description}" />
+	<link rel="canonical" th:href="#{content.top.url}" />
+	<meta property="og:url" th:content="#{content.top.url}" />
+	<meta property="og:title" th:content="#{content.top.title}" />
+	<meta property="og:description" th:content="#{content.top.description}" />
+</head>
+
+<body>
+	<div th:remove="tag" id="container">
+		<div layout:fragment="slider">
+		</div>
+		<div layout:fragment="mainSection">
+			<article id="post-51" class="post-51 page type-page status-publish hentry">
+				<div class="entry-body">
+					<h2 class="bg-head color-grn mb-4">産後の骨盤矯正</h2>
+					<div class="py-3">
+						<img th:src="@{images/sango/intro@2x.jpg}">
+					</div>
+					<div class="pt-3 pb-5">
+						<img th:src="@{images/sango/top_trouble@2x.jpg}">
+					</div>
+					<div class="mb-5 text-center">
+						<img th:src="@{images/sango/head_2@2x.png}" class="w-75">
+					</div>
+					<div class="mb-5">
+						<img th:src="@{images/sango/figure_1@2x.jpg}">
+					</div>
+					<div class="mb-5 text-center">
+						<img th:src="@{images/sango/head_3@2x.png}">
+					</div>
+					<div class="simple-head mt-0 mb-4 clearfix">
+						<span class="float-left">骨盤のゆがみタイプ</span>
+						<span class="float-right"><b style="font-size:14px;">タイプや症状が混在しているものもあります。</b></span>
+					</div>
+					<div class="mb-5 text-center">
+						<img th:src="@{images/sango/figure_2@2x.jpg}">
+					</div>
+					<div class="mb-5">
+						<p>骨盤は出産した時、最大に開いています。</p>
+						<p>なぜなら、妊娠すると出産に向けて赤ちゃんが通る産道を確保する為、リラキシンという女性ホルモンが分泌されます。</p>
+						<p>このホルモンは骨盤周りの靭帯を緩める働きがあり、出産まで徐々に骨盤が開いていきます。<br>つまり骨盤が不安定で歪みやすい状態になっています。</p>
+						<p>この時期に同じ方向に横座りを繰り返したり、上体を反らして背骨に負担をかけると骨盤にも負担がかかり歪みの原因になります。</p>
+						<p>さらに出産後は開いた骨盤が元に戻ろうとしますが、半年間は骨盤周りの靭帯や筋肉は伸びきって不安定な状態です。</p>
+						<p>この時期に猫背や反り腰などの悪い姿勢を続けた生活を送ると、骨盤に負担をかけて開いたまま固まったり、通常よりも歪んで固まったりします。</p>
+						<p>ですから骨盤を正しい位置に戻す為、矯正が必要になってきます。</p>
+						<p>そのままの状態にしておくと身体に様々な痛みや不調が出てきたり、崩れた体のラインが戻らなくなってしまいます。</p>
+					</div>
+					<div class="mb-4 text-center">
+						<img th:src="@{images/sango/head_4@2x.png}">
+					</div>
+					<div class="mb-4 text-center">
+						<img th:src="@{images/sango/figure_3@2x.jpg}" class="w-50 sp-100">
+					</div>
+					<div class="mb-5">
+						<p>痛みや身体の不調以外にもO脚や下半身太り、猫背の改善など、スタイルアップが目的で産後の骨盤矯正を受ける方もいらっしゃいます。</p>
+						<p>さらに、なかなか2人目を妊娠しないなどでお悩みの方でも、骨盤の歪みを矯正して身体の不調を改善していく事で妊娠しやすい身体作りをサポートできます。</p>
+						<p>身体に不調があると気分も滅入ってしまいます。<br>お気軽にご相談ください。</p>
+					</div>
+					<div class="py-4">
+						<div class="head-bg p-4 text-center">
+							<h4 class="simple-head m-0"><b class="color-wh">痛みや不調を繰り返さない体へ変われる！<br>施術３つのポイント</b></h4>
+						</div>
+					</div>
+					<div class="pb-4">
+						<p><img th:src="@{images/sango/figure_4@2x.jpg}" class="spnon">
+							<img th:src="@{images/sango/sp_figure_4@2x.jpg}" class="pcnon">
+						</p>
+					</div>
+					<p>にこにこ整骨院では、<span class="pc-br">痛みや不調の原因にアプローチした施術に加え、既に結果として出ている痛みや不調を緩和していきます。</span></p>
+					<p>なぜなら、施術を1回受けるだけでは痛みや不調を繰り返さない体になる事は難しいので、<span class="pc-br">まずは普段の生活を不安なく送る為に痛みや不調を緩和させる必要があるからです。</span>
+					</p>
+					<p>そして骨格と姿勢の矯正を行いながら痛みや不調を改善していきます。</p>
+					<p>さらに、正しい体の使い方のアドバイスや姿勢を保つ為には欠かせないインナーマッスルを鍛えて痛みや不調を繰り返さない体へと変えていきます。</p>
+					<h3 class="simple-head mt-5 mb-4 text-center">整体、整骨院、接骨院でも施術の内容が違います！</h3>
+					<div class="pb-4">
+						<p><img th:src="@{images/knowledg/figure_7@2x.jpg}"></p>
+					</div>
+					<div class="pb-5">
+						<p>例えば腰痛の施術を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
+						<p>さらに痛みは改善されたけど、しばらくしたら再び痛みが出てきた方は「痛みを改善」する施術を受けています。</p>
+						<p>にこにこ整骨院では痛み改善後、痛みが再発しない体づくりを目的に施術を行っています。</p>
+						<p>施術の内容は院によってそれぞれ違いますので、目的に合わせた院を選択する事が大切です。</p>
+					</div>
+
+					<div class="text-center arrow-bg">
+						<h5 class="h5-2em mt-0">
+							<b class="color-red">初めての方&nbsp;1日3名限定！<br>特別価格でお試しできます。
+							</b>
+						</h5>
+					</div>
+          <div th:include="fragments/price_fragment::campaign"></div>
+					<div th:include="fragments/reasion::reasion"></div>
+					<div th:include="fragments/merit::merit"></div>
+					<div th:include="fragments/price_fragment::campaign"></div>
+					<div th:include="fragments/common_fragment::voice"></div>
+					<div th:include="fragments/common_fragment::warning"></div>
+
+					</o>
+				</div>
+			</article>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <div  th:fragment="access" th:tag="remove">
+<!--   <p class="mb-5"> -->
+<!--     <img th:src="@{vendor/lightning_child/images/access/figure_1@2x.jpg}"> -->
+<!--   </p> -->
+    <h2 class="bg-head mb-4">アクセス</h2>
+	  <p class="mb-5"><img th:src="@{images/access/tenpo.jpg}"></p>
+    <h3 class="simple-head my-4">にこにこ整骨院・整体院</h3>
+    <div class="my-4">
+        <table class="table-1 w-100 table-sp">
+            <tbody><tr>
+                <th class="w-25">住所</th>
+                <td>〒332-0012　埼玉県川口市本町４-６-１０　スカイスクエア105</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>JR川口駅東口より徒歩3分！
+                <br>JR川口駅東口を出て、本町大通りを直進するとファミリーレストラン「ジョナサン」が見えます。ジョナサン向かい側のマンションの１階に当院がございます。 
+                <br>お車でお越しの方は近隣のコインパーキングをご利用下さいませ</td>
+            </tr>
+            <tr>
+                <th>最終受付時間</th>
+                <td>平日 10：00～21：00<br>土、日、祝 9:00～20:00</td>
+            </tr>
+            <tr>
+                <th>定休日</th>
+                <td>無</td>
+            </tr>
+        </tbody></table>
+    </div>
+    <h3 class="simple-head mt-5 mb-4">アクセスマップ</h3>
+    <div class="googlemap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1882.8782323914834!2d139.71865750747236!3d35.801141164642985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018935ab1b3683f%3A0xf37bc25e3551b346!2z5bed5Y-jIOOBq-OBk-OBq-OBk-aVtOmqqOmZog!5e0!3m2!1sja!2sjp!4v1679373023260!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div  th:fragment="panorama" th:tag="remove">
+    <h3 class="simple-head my-4">さらに詳しく院内を見たい方は360°のパノラマで見渡せるコチラにてご確認ください。ご来院したような臨場感が味わえます。</h3>
+    <div class="my-4">
+      <iframe
+        th:src="@{panorama6}"
+        width="100%" height="380" frameborder="0" style="border: 0px; max-width: 100%;" allowfullscreen=""
+        aria-hidden="false" tabindex="0" scrolling="no"></iframe>
+    </div>
+  </div>
+  <div  th:fragment="accessmap" th:tag="remove">
+    <h3 class="simple-head mt-5 mb-4">アクセスマップ</h3>
+    <div class="googlemap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3235.93364108609!2d139.71733846508724!3d35.801562380166466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f0.1!4m13!3e2!4m5!1s0x6018936f1b42a1eb%3A0xc567c84a5574a8f1!2z5Z-8546J55yM5bed5Y-j5biC5qCE55S677yT5LiB55uu77yVIOW3neWPo-mnheadseWPow!3m2!1d35.8025099!2d139.7185308!4m5!1s0x6018935ab1b3683f%3A0xf37bc25e3551b346!2z44CSMzMyLTAwMTIg5Z-8546J55yM5bed5Y-j5biC5pys55S677yU5LiB55uu77yW4oiS77yR77yQIOW3neWPoyDjgavjgZPjgavjgZPmlbTpqqjpmaI!3m2!1d35.8006149!2d139.7205234!5e0!3m2!1sja!2sjp!4v1679211103041!5m2!1sja!2sjp"
+ width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div  th:fragment="accessdetail" th:tag="remove">
+     <h3 class="simple-head mt-5 mb-4">にこにこ整骨院への詳しい道順</h3>
+      <h4 class="border-head my-4">JR各線大宮駅からお越しの場合</h4>
+        <div class="text-center access-flow-container">
+          <div class="d-sm-flex row">
+            <div class="col-sm-4 arrow-r">
+              <p class="img"><img th:src="@{images/access/flow_1.png}" style="height:150px;"></p>
+              <p>①川口駅の改札を出て東口へ向かう。</p>
+            </div>
+            <div class="col-sm-4 arrow-r">
+              <p class="img"><img th:src="@{images/access/flow_2.png}" style="height:150px;"></p>
+              <p>②東口を出るとエスカレーターが見える。</p>
+            </div>
+            <div class="col-sm-4 arrow-b">
+              <p class="img"><img th:src="@{images/access/flow_3.png}" style="height:150px;"></p>
+              <p>③エスカレーターで1階に降りる。</p>
+            </div>
+          </div>
+          <div class="d-sm-flex row">
+            <div class="col-sm-4 arrow-r">
+              <p class="img"><img th:src="@{images/access/flow_4.png}" style="height:150px;"></p>
+              <p>④1階に出たらキュポラ広場を通り抜ける。</p>
+            </div>
+            <div class="col-sm-4 arrow-r">
+              <p class="img"><img th:src="@{images/access/flow_5.png}" style="height:150px;"></p>
+              <p>⑤キュポラ広場を抜けたらセブンイレブンの前を通過し進む。</p>
+            </div>
+            <div class="col-sm-4 access-last">
+              <p class="img"><img th:src="@{images/access/flow_6.png}" style="height:150px;"></p>
+              <p>⑥横断歩道を渡りそのまま直進。<br>突き当りで看板が見えます。</p>
+            </div>
+          </div>
+          <div th:replace="fragments/reasion::reasion"></div>
+          <div th:replace="fragments/merit::merit"></div>
+          <div th:replace="fragments/price_fragment::campaign"></div>
+      </div>
+  </div>  
+</html>
