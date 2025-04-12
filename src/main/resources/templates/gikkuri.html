@@ -12,129 +12,156 @@
 	<meta property="og:url" th:content="#{content.gikkuri.url}" />
 	<meta property="og:title" th:content="#{content.gikkuri.title}" />
 	<meta property="og:description" th:content="#{content.gikkuri.description}" />
+	<meta property="og:image" content="https://www.niconico-kawaguchi.com/images/gikkuri.jpg" />
+	<meta property="og:image:alt" content="ぎっくり腰・寝違え施術の様子" />
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Service",
+		"name": "ぎっくり腰・寝違えの施術",
+		"description": "急な痛みや動けない状態を、早期改善と再発防止でサポートします。",
+		"provider": {
+			"@type": "LocalBusiness",
+			"name": "にこにこ整骨院・整体院",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "埼玉県川口市川口3-2-1",
+				"addressLocality": "川口市",
+				"addressRegion": "埼玉県",
+				"postalCode": "332-0012",
+				"addressCountry": "JP"
+			},
+			"telephone": "048-255-5555"
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "川口市"
+		},
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "ぎっくり腰・寝違え施術メニュー",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "早期改善施術",
+						"description": "痛みの原因を特定し、早期改善を目指します"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "再発防止プログラム",
+						"description": "正しい姿勢と体の使い方を指導します"
+					}
+				}
+			]
+		}
+	}
+	</script>
 </head>
 
 <body>
 	<div th:remove="tag" id="container">
 
 		<div layout:fragment="mainSection">
-			<article id="post-45" class="post-45 page type-page status-publish hentry">
+			<article id="post-39" class="post-39 page type-page status-publish hentry">
 				<div class="entry-body">
-					<h2 class="bg-head color-grn mb-4">ぎっくり腰、寝違え</h2>
+					<h1 class="bg-head color-grn mb-4">ぎっくり腰・寝違えの施術</h1>
 					<div class="py-3">
-						<img th:src="@{images/gikkuri/intro@2x.jpg}">
+						<img th:src="@{images/gikkuri/intro@2x.jpg}" alt="ぎっくり腰・寝違え施術の様子">
 					</div>
 					<div class="pt-3 pb-5">
-						<img th:src="@{images/gikkuri/top_trouble@2x.jpg}">
+						<img th:src="@{images/gikkuri/top_trouble@2x.jpg}" alt="ぎっくり腰・寝違えの症状">
 					</div>
 					<div class="mb-4">
-						<img th:src="@{images/gikkuri/head_1@2x.png}">
+						<img th:src="@{images/gikkuri/head_1@2x.png}" alt="ぎっくり腰・寝違えの原因">
 					</div>
 					<div class="text-center">
-						<p>急に痛くなるぎっくり腰や寝違えは、痛みを引き起こしている原因をしっかりと見極めて<span class="pc-br">改善させる事が大切です。</span></p>
-						<p>原因を改善せずにいると、痛みを何回も繰り返し身体への負担が大きくなっていきます。&nbsp;<br>にこにこ整骨院は、ぎっくり腰や寝違えを引き起こす原因を施術して改善に加え<span
-								class="pc-br">再発しない身体作りをサポートしています。</span><br>治らないと諦めずにしっかりとお身体をケアしましょう！</p>
+						<p>急に腰が痛くなって動けなくなった、首が痛くて回せない…<br>そんな急な痛みでお困りではありませんか？</p>
+						<p>ぎっくり腰や寝違えは、適切な処置をしないと慢性化する恐れがあります。</p>
+						<p>痛みを我慢せず、早めの施術で改善を目指しましょう！</p>
 					</div>
 					<div class="mb-5 text-center">
-						<img th:src="@{images/youtsu/head_2@2x.png}" class="w-75">
-					</div>
-					<div class="mb-5">
-						<img th:src="@{images/youtsu/figure_1@2x.jpg}">
+						<img th:src="@{images/gikkuri/head_2@2x.png}" class="w-75" alt="ぎっくり腰・寝違えの原因">
 					</div>
 					<div class="mb-5 text-center">
-						<img th:src="@{images/gikkuri/head_2@2x.png}">
+						<img th:src="@{images/gikkuri/head_3@2x.png}" alt="ぎっくり腰・寝違え改善のポイント">
 					</div>
-					<div class="mb-4">
-						<p>急に痛みが出るぎっくり腰や寝違えは、原因もなく突然起こるわけではありません。</p>
-						<p>
-							猫背や反り腰などの姿勢の悪さや、普段の生活で無意識に行っている悪い動作が首や腰に負担をかけ続けて限界になった時、前かがみになったり重いものを持ったり、首に負担のかかる姿勢で寝るなど「痛みを引き起こす動作」を取ったタイミングで引き起こされます。
-						</p>
-					</div>
-					<div class="mb-4">
-						<img th:src="@{images/gikkuri/figure_1@2x.jpg}" class="spnon">
-						<img th:src="@{images/gikkuri/sp_figure_1@2x.jpg}" class="pcnon">
+					<div class="mb-5 text-center">
+						<figure class="mb-0">
+							<img th:src="@{images/gikkuri/figure_6-1@2x.jpg}" class="w-75 px-4" alt="ぎっくり腰・寝違えのメカニズム">
+						</figure>
+						<img th:src="@{images/gikkuri/figure_6-2@2x.jpg}" class="px-md-4" alt="ぎっくり腰・寝違えの原因">
 					</div>
 					<div class="mb-5">
-						<p>ぎっくり腰が繰り返すんじゃないかと不安な方は腰をかばい、寝違えた方は首が痛くて寝返りが打てないなど、腰や首の筋肉を極力動かさなくなるので筋肉は緊張して硬くなっています。</p>
-						<p>ですから、その硬くなっている筋肉の緊張を取る施術が必要になります。</p>
+						<p>ぎっくり腰や寝違えは、筋肉や関節に急激な負荷がかかることで起こります。</p>
+						<p>主な原因は、姿勢の悪さ、筋肉の疲労、急な動作などです。</p>
+						<p>これらの要因が重なることで、筋肉や関節に炎症が生じ、痛みを引き起こします。</p>
+						<p>また、体の歪みや筋力の低下も症状を悪化させる要因となります。</p>
 					</div>
 					<div class="py-4">
 						<div class="head-bg p-4 text-center">
-							<h4 class="simple-head m-0"><b class="color-wh">ぎっくり腰や寝違えでやってはいけない事とは？</b></h4>
-						</div>
-					</div>
-					<div class="d-flex row">
-						<div class="col-5">
-							<p class="text-center"><img th:src="@{images/gikkuri/figure_2@2x.jpg}"></p>
-						</div>
-						<div class="col-7">
-							<p>ある日突然痛みに襲われるぎっくり腰や寝違えですが、都合がつかずなかなか病院等に行けないのでインターネット等で情報を検索して、自力で改善させようとする方もいらっしゃいます。</p>
-							<p>しかし、痛みが出てきた時に、<span class="pc-br">絶対やってはいけない事は３つあります。</span></p>
-							<p>・腰や首を積極的に動かす<br>・揉む<br>・何もしない</p>
-							<p>痛みが出ている腰や首は炎症が起きています。<br>炎症が起きている腰や首を積極的に動かしたり、揉んだりして刺激を与えてしまうと余計に<span
-									class="pc-br">炎症がひどくなり痛みが増します。</span></p>
-							<p>痛みが強い場合の処置は、冷やして安静にする事が大切です。<br>また痛みが引いてくると、もう大丈夫と思って何もしない方もいらっしゃいます。</p>
+							<h2 class="simple-head m-0"><b class="color-wh">早期改善と再発防止で<br>痛みのない生活を！</b></h2>
 						</div>
 					</div>
 					<div class="pb-4">
-						<p>腰や首の筋肉は硬いままなので、何もしないと腰や首の筋肉に負担がかかり続け、<span class="pc-br">「痛みを引き起こす動作」を取った時に痛みが繰り返し出てきます。</span></p>
-						<p>にこにこ整骨院では、ぎっくり腰や寝違えを繰り返さない施術を行っておりますので、<span class="pc-br">お気軽にお問い合わせください！</span></p>
+						<p><img th:src="@{images/gikkuri/figure_6@2x.jpg}" class="spnon" alt="施術のポイント"><img th:src="@{images/sp_figure_6@2x.jpg}" class="pcnon" alt="施術のポイント"></p>
+					</div>
+					<p>にこにこ整骨院では、<br>痛みの原因を特定し、早期改善を目指した施術を行います。</p>
+					<p>なぜなら、痛みを我慢していると、症状が慢性化する恐れがあるからです。</p>
+					<p>そして、痛みが改善した後も、再発防止のための指導を行います。</p>
+					<p>さらに、正しい姿勢や体の使い方を身につけることで、痛みのない生活を送れるようサポートします。</p>
+					<h3 class="simple-head mt-5 mb-4 text-center">整体、整骨院、接骨院でも施術の内容が違います！</h3>
+					<div class="pb-4">
+						<p><img th:src="@{images/gikkuri/figure_7@2x.jpg}" alt="施術の違い"></p>
+					</div>
+					<div class="pb-5">
+						<p>例えばぎっくり腰や寝違えの施術を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
+						<p>さらに痛みは改善されたけど、しばらくしたら再び痛みが出てきた方は「痛みを改善」する施術を受けています。</p>
+						<p>にこにこ整骨院では痛み改善後、痛みが再発しない体づくりを目的に施術を行っています。</p>
+						<p>施術の内容は院によってそれぞれ違いますので、目的に合わせた院を選択する事が大切です。</p>
 					</div>
 					<div class="mb-5 text-center">
-						<img th:src="@{images/gikkuri/head_3@2x.png}">
+						<img th:src="@{images/gikkuri/head_4@2x.png}" class="spnon" alt="施術の流れ">
+						<img th:src="@{images/gikkuri/sp_head_4@2x.png}" class="pcnon" alt="施術の流れ">
 					</div>
 					<div class="bg-dot-head my-4">
 						<div class="d-table w-100">
 							<div class="d-table-row">
 								<div class="d-table-cell num simple text-center">
-									<p class="mb-0"><b>2</b></p>
+									<p class="mb-0"><b>1</b></p>
 								</div>
 								<div class="d-table-cell text align-middle p-3">
-									<h5 class="m-0 p-0"><b>ソフトな刺激の骨格・骨盤矯正</b></h5>
+									<h4 class="m-0 p-0"><b>早期改善のための施術</b></h4>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="d-sm-flex row">
-						<div class="col-sm-6 order-sm-2">
-							<p><img th:src="@{images/youtsu/figure_2@2x.jpg}"></p>
+						<div class="col-sm-6">
+							<p><img th:src="@{images/gikkuri/figure_2@2x.jpg}" alt="早期改善施術の様子"></p>
 						</div>
-						<div class="col-sm-6 order-sm-1">
-							<p>身体の歪みや姿勢を正し、ぎっくり腰や寝違えを再発させない為に、骨格・骨盤矯正専用のトムソンベッドを使って施術を行います。</p>
-							<p>トムソンベッドは、お身体の負担が少なく矯正できるので、お子さまからお年寄りまで安心して受けられる施術法です。</p>
-							<p>トムソンベッドを使わない整体院や整骨院では、バキバキする施術法もありますが、当院の施術はバキバキせずソフトな刺激です。</p>
-							<p>骨格・骨盤矯正で骨を正常な位置に戻すことで、筋肉にかかる負担を減らします。</p>
+						<div class="col-sm-6">
+							<p>ぎっくり腰や寝違えの痛みは、炎症や筋肉の緊張が原因です。</p>
+							<p>当院では、痛みの原因を特定し、炎症を抑え、筋肉の緊張を緩和する施術を行います。</p>
+							<p>また、痛みが強い方でも安心して受けられるよう、ソフトな施術を心がけています。</p>
 						</div>
 					</div>
 					<div class="pb-3">
-						<p>電気の刺激が苦手な方は、安心して施術を受けられるように微調整しながら施術いたします。</p>
+						<p>早期に適切な施術を受けることで、痛みの改善が早まり、日常生活への影響を最小限に抑えることができます。</p>
+						<p>また、痛みが慢性化するのを防ぎ、再発のリスクを減らすことができます。</p>
 					</div>
-					<div class="text-center pt-3 mb-5">
-						<p class="mb-4"><img th:src="@{images/katakori/catch@2x.png}" class="w-50"></p>
-
+					<div class="pb-3">
+						<p>痛みが強い方は、安心して施術を受けられるように微調整しながら施術いたします。</p>
 					</div>
-					<div th:replace="fragments/price_fragment::campaign"></div>
 					<div th:include="fragments/reasion::reasion"></div>
 					<div th:include="fragments/merit::merit"></div>
 					<div th:include="fragments/price_fragment::campaign"></div>
 					<div th:include="fragments/common_fragment::voice"></div>
-					<div class="border-block mb-5">
-						<h4 class="head m-0 p-4 text-center"><b>当院に通うとこんな変化を実感できます</b></h4>
-						<div class="border-block-container p-1">
-							<div class="bg p-4">
-								<ul class="list-unstyled list-check m-0">
-									<li class="mb-2">繰り返す痛みの<span class="color-red">原因が明確になり、スッキリ改善！</span></li>
-									<li class="mb-2"><span class="color-red">痛みが再発するんじゃないかといった不安から</span>解放される</li>
-									<li class="mb-2"><span class="color-red">湿布やコルセット、痛み止めに頼らなくても</span>よくなる</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="text-center">
-						<h4 class="simple-head p-0 color-gry"><b>痛みを繰り返さず明るく健康な生活を<span
-									class="pc-br">送りたいとお考えなら一度ご相談ください！</span></b></h4>
-					</div>
-
+					<div th:include="fragments/common_fragment::warning"></div>
 				</div>
 			</article>
 		</div>

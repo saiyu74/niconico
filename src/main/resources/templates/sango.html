@@ -5,13 +5,62 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
 
 <head>
-	<title th:text="#{content.top.title}"></title>
+	<title th:text="#{content.sango.title}"></title>
 	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<meta name="description" th:content="@{content.top.description}" />
-	<link rel="canonical" th:href="#{content.top.url}" />
-	<meta property="og:url" th:content="#{content.top.url}" />
-	<meta property="og:title" th:content="#{content.top.title}" />
-	<meta property="og:description" th:content="#{content.top.description}" />
+	<meta name="description" th:content="@{content.sango.description}" />
+	<link rel="canonical" th:href="#{content.sango.url}" />
+	<meta property="og:url" th:content="#{content.sango.url}" />
+	<meta property="og:title" th:content="#{content.sango.title}" />
+	<meta property="og:description" th:content="#{content.sango.description}" />
+	<meta property="og:image" content="https://www.niconico-kawaguchi.com/images/sango.jpg" />
+	<meta property="og:image:alt" content="産後の骨盤矯正施術の様子" />
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Service",
+		"name": "産後の骨盤矯正",
+		"description": "出産後の骨盤の歪みを、ソフトな刺激の骨盤矯正で改善します。",
+		"provider": {
+			"@type": "LocalBusiness",
+			"name": "にこにこ整骨院・整体院",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "埼玉県川口市川口3-2-1",
+				"addressLocality": "川口市",
+				"addressRegion": "埼玉県",
+				"postalCode": "332-0012",
+				"addressCountry": "JP"
+			},
+			"telephone": "048-255-5555"
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "川口市"
+		},
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "産後の骨盤矯正メニュー",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "骨盤矯正",
+						"description": "出産で開いた骨盤を正しい位置に戻します"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "インナーマッスルトレーニング",
+						"description": "骨盤を支える筋肉を鍛えます"
+					}
+				}
+			]
+		}
+	}
+	</script>
 </head>
 
 <body>
@@ -19,92 +68,101 @@
 		<div layout:fragment="slider">
 		</div>
 		<div layout:fragment="mainSection">
-			<article id="post-51" class="post-51 page type-page status-publish hentry">
+			<article id="post-39" class="post-39 page type-page status-publish hentry">
 				<div class="entry-body">
-					<h2 class="bg-head color-grn mb-4">産後の骨盤矯正</h2>
+					<h1 class="bg-head color-grn mb-4">産後の骨盤矯正</h1>
 					<div class="py-3">
-						<img th:src="@{images/sango/intro@2x.jpg}">
+						<img th:src="@{images/sango/intro@2x.jpg}" alt="産後の骨盤矯正施術の様子">
 					</div>
 					<div class="pt-3 pb-5">
-						<img th:src="@{images/sango/top_trouble@2x.jpg}">
+						<img th:src="@{images/sango/top_trouble@2x.jpg}" alt="産後の骨盤の症状">
+					</div>
+					<div class="mb-4">
+						<img th:src="@{images/sango/head_1@2x.png}" alt="産後の骨盤の原因">
+					</div>
+					<div class="text-center">
+						<p>出産後、骨盤が開いたままになっていませんか？<br>骨盤の歪みを放置すると、腰痛や尿漏れ、体型の崩れなど、様々な不調の原因になります。</p>
+						<p>産後の骨盤矯正は、出産後6ヶ月以内が最も効果的です。</p>
+						<p>もう体型は戻らないと諦めないで、お気軽にご相談ください！</p>
 					</div>
 					<div class="mb-5 text-center">
-						<img th:src="@{images/sango/head_2@2x.png}" class="w-75">
-					</div>
-					<div class="mb-5">
-						<img th:src="@{images/sango/figure_1@2x.jpg}">
+						<img th:src="@{images/sango/head_2@2x.png}" class="w-75" alt="産後の骨盤の原因">
 					</div>
 					<div class="mb-5 text-center">
-						<img th:src="@{images/sango/head_3@2x.png}">
-					</div>
-					<div class="simple-head mt-0 mb-4 clearfix">
-						<span class="float-left">骨盤のゆがみタイプ</span>
-						<span class="float-right"><b style="font-size:14px;">タイプや症状が混在しているものもあります。</b></span>
+						<img th:src="@{images/sango/head_3@2x.png}" alt="産後の骨盤改善のポイント">
 					</div>
 					<div class="mb-5 text-center">
-						<img th:src="@{images/sango/figure_2@2x.jpg}">
+						<figure class="mb-0">
+							<img th:src="@{images/sango/figure_6-1@2x.jpg}" class="w-75 px-4" alt="産後の骨盤のメカニズム">
+						</figure>
+						<img th:src="@{images/sango/figure_6-2@2x.jpg}" class="px-md-4" alt="産後の骨盤の原因">
 					</div>
 					<div class="mb-5">
-						<p>骨盤は出産した時、最大に開いています。</p>
-						<p>なぜなら、妊娠すると出産に向けて赤ちゃんが通る産道を確保する為、リラキシンという女性ホルモンが分泌されます。</p>
-						<p>このホルモンは骨盤周りの靭帯を緩める働きがあり、出産まで徐々に骨盤が開いていきます。<br>つまり骨盤が不安定で歪みやすい状態になっています。</p>
-						<p>この時期に同じ方向に横座りを繰り返したり、上体を反らして背骨に負担をかけると骨盤にも負担がかかり歪みの原因になります。</p>
-						<p>さらに出産後は開いた骨盤が元に戻ろうとしますが、半年間は骨盤周りの靭帯や筋肉は伸びきって不安定な状態です。</p>
-						<p>この時期に猫背や反り腰などの悪い姿勢を続けた生活を送ると、骨盤に負担をかけて開いたまま固まったり、通常よりも歪んで固まったりします。</p>
-						<p>ですから骨盤を正しい位置に戻す為、矯正が必要になってきます。</p>
-						<p>そのままの状態にしておくと身体に様々な痛みや不調が出てきたり、崩れた体のラインが戻らなくなってしまいます。</p>
-					</div>
-					<div class="mb-4 text-center">
-						<img th:src="@{images/sango/head_4@2x.png}">
-					</div>
-					<div class="mb-4 text-center">
-						<img th:src="@{images/sango/figure_3@2x.jpg}" class="w-50 sp-100">
-					</div>
-					<div class="mb-5">
-						<p>痛みや身体の不調以外にもO脚や下半身太り、猫背の改善など、スタイルアップが目的で産後の骨盤矯正を受ける方もいらっしゃいます。</p>
-						<p>さらに、なかなか2人目を妊娠しないなどでお悩みの方でも、骨盤の歪みを矯正して身体の不調を改善していく事で妊娠しやすい身体作りをサポートできます。</p>
-						<p>身体に不調があると気分も滅入ってしまいます。<br>お気軽にご相談ください。</p>
+						<p>出産時、骨盤は赤ちゃんが通れるように大きく開きます。この開いた骨盤は、自然に元に戻ろうとしますが、完全には戻らないことが多いです。</p>
+						<p>骨盤が歪んだままだと、内臓が下がり、下腹部がぽっこり出たり、腰痛や尿漏れの原因になります。</p>
+						<p>また、骨盤の歪みは姿勢の悪化を招き、肩こりや首の痛みなど、全身の不調につながることもあります。</p>
+						<p>産後の骨盤矯正は、これらの問題を予防・改善するために重要な施術です。</p>
 					</div>
 					<div class="py-4">
 						<div class="head-bg p-4 text-center">
-							<h4 class="simple-head m-0"><b class="color-wh">痛みや不調を繰り返さない体へ変われる！<br>施術３つのポイント</b></h4>
+							<h2 class="simple-head m-0"><b class="color-wh">痛みを繰り返さない体へ変われる！<br>施術３つのポイント</b></h2>
 						</div>
 					</div>
 					<div class="pb-4">
-						<p><img th:src="@{images/sango/figure_4@2x.jpg}" class="spnon">
-							<img th:src="@{images/sango/sp_figure_4@2x.jpg}" class="pcnon">
-						</p>
+						<p><img th:src="@{images/sango/figure_6@2x.jpg}" class="spnon" alt="施術のポイント"><img th:src="@{images/sp_figure_6@2x.jpg}" class="pcnon" alt="施術のポイント"></p>
 					</div>
-					<p>にこにこ整骨院では、<span class="pc-br">痛みや不調の原因にアプローチした施術に加え、既に結果として出ている痛みや不調を緩和していきます。</span></p>
-					<p>なぜなら、施術を1回受けるだけでは痛みや不調を繰り返さない体になる事は難しいので、<span class="pc-br">まずは普段の生活を不安なく送る為に痛みや不調を緩和させる必要があるからです。</span>
-					</p>
-					<p>そして骨格と姿勢の矯正を行いながら痛みや不調を改善していきます。</p>
-					<p>さらに、正しい体の使い方のアドバイスや姿勢を保つ為には欠かせないインナーマッスルを鍛えて痛みや不調を繰り返さない体へと変えていきます。</p>
+					<p>にこにこ整骨院では、<br>痛みの原因にアプローチした施術に加え、既に結果として出ている痛みを緩和していきます。</p>
+					<p>なぜなら、施術を1回受けるだけでは痛みを繰り返さない体になる事は難しいので、<span class="pc-br">まずは普段の生活を不安なく送る為に痛みを緩和させる必要があるからです。</span></p>
+					<p>そして骨格と姿勢の矯正を行いながら痛みを改善していきます。</p>
+					<p>さらに、正しい体の使い方のアドバイスや姿勢を保つ為には欠かせないインナーマッスルを鍛えて痛みを繰り返さない体へと変えていきます。</p>
 					<h3 class="simple-head mt-5 mb-4 text-center">整体、整骨院、接骨院でも施術の内容が違います！</h3>
 					<div class="pb-4">
-						<p><img th:src="@{images/knowledg/figure_7@2x.jpg}"></p>
+						<p><img th:src="@{images/sango/figure_7@2x.jpg}" alt="施術の違い"></p>
 					</div>
 					<div class="pb-5">
-						<p>例えば腰痛の施術を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
+						<p>例えば産後の骨盤矯正を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
 						<p>さらに痛みは改善されたけど、しばらくしたら再び痛みが出てきた方は「痛みを改善」する施術を受けています。</p>
 						<p>にこにこ整骨院では痛み改善後、痛みが再発しない体づくりを目的に施術を行っています。</p>
 						<p>施術の内容は院によってそれぞれ違いますので、目的に合わせた院を選択する事が大切です。</p>
 					</div>
-
-					<div class="text-center arrow-bg">
-						<h5 class="h5-2em mt-0">
-							<b class="color-red">初めての方&nbsp;1日3名限定！<br>特別価格でお試しできます。
-							</b>
-						</h5>
+					<div class="mb-5 text-center">
+						<img th:src="@{images/sango/head_4@2x.png}" class="spnon" alt="施術の流れ">
+						<img th:src="@{images/sango/sp_head_4@2x.png}" class="pcnon" alt="施術の流れ">
 					</div>
-          <div th:include="fragments/price_fragment::campaign"></div>
+					<div class="bg-dot-head my-4">
+						<div class="d-table w-100">
+							<div class="d-table-row">
+								<div class="d-table-cell num simple text-center">
+									<p class="mb-0"><b>1</b></p>
+								</div>
+								<div class="d-table-cell text align-middle p-3">
+									<h4 class="m-0 p-0"><b>ソフトな刺激の骨盤矯正</b></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-sm-flex row">
+						<div class="col-sm-6">
+							<p><img th:src="@{images/sango/figure_2@2x.jpg}" alt="骨盤矯正の様子"></p>
+						</div>
+						<div class="col-sm-6">
+							<p>産後の骨盤の歪みは、骨盤矯正専用のトムソンベッドを使って施術を行います。</p>
+							<p>トムソンベッドは、お身体の負担が少なく矯正できるので、産後間もない方でも安心して受けられる施術法です。</p>
+							<p>トムソンベッドを使わない整体院や整骨院では、バキバキする施術法もありますが、当院の施術はバキバキせずソフトな刺激です。</p>
+						</div>
+					</div>
+					<div class="pb-3">
+						<p>骨盤矯正で骨を正常な位置に戻すことで、内臓の位置も正しくなり、下腹部のぽっこりや尿漏れなどの症状が改善されます。</p>
+						<p>また、骨盤の歪みが改善されることで、腰痛や肩こりなどの症状も軽減されます。</p>
+					</div>
+					<div class="pb-3">
+						<p>産後間もない方は、安心して施術を受けられるように微調整しながら施術いたします。</p>
+					</div>
 					<div th:include="fragments/reasion::reasion"></div>
 					<div th:include="fragments/merit::merit"></div>
 					<div th:include="fragments/price_fragment::campaign"></div>
 					<div th:include="fragments/common_fragment::voice"></div>
 					<div th:include="fragments/common_fragment::warning"></div>
-
-					</o>
 				</div>
 			</article>
 		</div>

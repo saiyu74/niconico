@@ -14,7 +14,21 @@
 	<!-- End Google Tag Manager -->
 	<!-- メタ情報 -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="にこにこ整骨院・整体院">
+	<meta http-equiv="Cache-Control" content="public, max-age=31536000">
+	<meta http-equiv="Expires" content="31536000">
+	<meta http-equiv="Pragma" content="public">
+	<meta name="theme-color" content="#FFAC1D">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="image" content="https://www.niconico-kawaguchi.com/images/logo.png">
+	<meta property="og:image" content="https://www.niconico-kawaguchi.com/images/logo.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="にこにこ整骨院・整体院のロゴ">
 	<!-- head内に書きたいコード -->
 	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
@@ -26,6 +40,22 @@
 		type='text/css' media='all' />
 	<link rel='stylesheet' th:href='@{content/themes/lightning/design-skin/origin2/css/style.css}' type='text/css'
 		media='all' />
+	<link rel='stylesheet' th:href='@{content/themes/lightning/assets/css/common.css}' type='text/css' media='all' />
+	<link rel='stylesheet' th:href='@{content/themes/lightning_child/style.css}' type='text/css' media='all' />
+	<link rel='stylesheet' th:href='@{content/themes/lightning/inc/font-awesome/package/versions/5/css/all.min.css}'
+		type='text/css' media='all' />
+	<link rel="stylesheet" th:href='@{vendor/SmartSlider3/css/smartslider.min.css}' type='text/css' media='all' />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Questrial&display=swap">
+	<link rel="preload" as="script" th:href='@{includes/js/jquery/jquery.js}'>
+	<link rel="preload" as="script" th:href='@{js/common.js}'>
+	<link rel="preload" as="script" th:href='@{vendor/SmartSlider3/js/n2.min.js}'>
+	<link rel="preload" as="image" th:href="@{images/logo.png}">
+	<link rel="preload" as="image" th:href="@{images/favicon-32x32.png}">
+	<link rel="preload" as="image" th:href="@{images/favicon-192x192.png}">
+	<link rel="preload" as="image" th:href="@{images/favicon-180x180.png}">
+	<link rel="preload" as="image" th:href="@{images/favicon-270x270.png}">
 	<style id='lightning-design-style-inline-css' type='text/css'>
 		.tagcloud a:before {
 			font-family: "Font Awesome 5 Free";
@@ -90,105 +120,6 @@
 			border-left-color: #FFAC1D;
 		}
 	</style>
-	<link rel='stylesheet' th:href='@{content/themes/lightning/assets/css/common.css}' type='text/css' media='all' />
-	<link rel='stylesheet' th:href='@{content/themes/lightning_child/style.css}' type='text/css' media='all' />
-	<style type='text/css'>
-		.prBlock_icon_outer {
-			border: 1px solid #FFAC1D;
-		}
-
-		.prBlock_icon {
-			color: #FFAC1D;
-		}
-	</style>
-
-
-	<link rel='stylesheet' th:href='@{content/themes/lightning/inc/font-awesome/package/versions/5/css/all.min.css}'
-		type='text/css' media='all' />
-  <link rel="stylesheet" th:href='@{vendor/SmartSlider3/css/smartslider.min.css}' type='text/css' media='all' />
-<style type="text/css">.n2-ss-spinner-simple-white-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -20px;
-    background: #fff;
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 1000;
-}
-
-.n2-ss-spinner-simple-white {
-  outline: 1px solid RGBA(0,0,0,0);
-  width:100%;
-  height: 100%;
-}
-
-.n2-ss-spinner-simple-white:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -11px;
-    margin-left: -11px;
-}
-
-.n2-ss-spinner-simple-white:not(:required):before {
-    content: '';
-    border-radius: 50%;
-    border-top: 2px solid #333;
-    border-right: 2px solid transparent;
-    animation: n2SimpleWhite .6s linear infinite;
-}
-@keyframes n2SimpleWhite {
-    to {transform: rotate(360deg);}
-}
-.n2-ss-spinner-simple-white-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -20px;
-    background: #fff;
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    z-index: 1000;
-}
-
-.n2-ss-spinner-simple-white {
-  outline: 1px solid RGBA(0,0,0,0);
-  width:100%;
-  height: 100%;
-}
-
-.n2-ss-spinner-simple-white:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -11px;
-    margin-left: -11px;
-}
-
-.n2-ss-spinner-simple-white:not(:required):before {
-    content: '';
-    border-radius: 50%;
-    border-top: 2px solid #333;
-    border-right: 2px solid transparent;
-    animation: n2SimpleWhite .6s linear infinite;
-}
-@keyframes n2SimpleWhite {
-    to {transform: rotate(360deg);}
-}</style>
-
-<script type=' text/javascript' th:src='@{includes/js/jquery/jquery.js}'></script>
-	<script type='text/javascript' id='jquery-core-js-after'>
-		; (function ($, document, window) {$(document).ready(function ($) {/* Add scroll recognition class */$(window).scroll(function () {var scroll = $(this).scrollTop(); if ($(this).scrollTop() > 160) {$('body').addClass('header_scrolled');} else {$('body').removeClass('header_scrolled');} });});})(jQuery, document, window);
-	</script>
 	<style id="lightning-color-custom-for-plugins" type="text/css">
 		/* ltg theme common */
 		.color_key_bg,
@@ -279,16 +210,130 @@
 	<link rel="icon" th:href="@{images/favicon-192x192.png}" sizes="192x192" />
 	<link rel="apple-touch-icon" th:href="@{images/favicon-180x180.png}" />
 	<meta name="msapplication-TileImage" th:href="@{images/favicon-270x270.png}" />
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
+	<meta name="theme-color" content="#FFAC1D" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+	<meta name="description" content="川口市の整体・整骨院。国家資格者が痛みの原因を明確にして、痛みを繰返さない体作りをサポートします。24時間LINE予約OK。">
+	<meta name="keywords" content="川口市,整体,整骨院,腰痛,肩こり,骨盤矯正,交通事故,むち打ち">
+	<meta name="author" content="にこにこ整骨院・整体院">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="7 days">
+	<meta name="language" content="Japanese">
+	<meta name="generator" content="Spring Boot">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:;">
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
+	<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+	<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+	<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+	<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
 
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "にこにこ整骨院・整体院",
+		"image": "https://www.niconico-kawaguchi.com/images/logo.png",
+		"priceRange": "¥¥",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "埼玉県川口市川口3-2-1",
+			"addressLocality": "川口市",
+			"addressRegion": "埼玉県",
+			"postalCode": "332-0012",
+			"addressCountry": "JP"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 35.8014,
+			"longitude": 139.7178
+		},
+		"url": "https://www.niconico-kawaguchi.com/",
+		"telephone": "048-255-5555",
+		"openingHours": "Mo,Tu,We,Th,Fr 09:00-20:00",
+		"sameAs": [
+			"https://www.instagram.com/niconico_kawaguchi/",
+			"https://line.me/R/ti/p/@niconico_kawaguchi"
+		],
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "施術メニュー",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "肩こり・肩の痛みの施術",
+						"description": "姿勢の歪みや筋肉の緊張による肩こりを、骨格・骨盤矯正で根本から改善します。",
+						"url": "https://www.niconico-kawaguchi.com/katakori"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "腰痛の施術",
+						"description": "身体の歪みによる腰痛を、ソフトな刺激の骨格・骨盤矯正で改善します。",
+						"url": "https://www.niconico-kawaguchi.com/youtsu"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "産後の骨盤矯正",
+						"description": "産後の骨盤の開きによる不調を改善し、スタイルアップをサポートします。",
+						"url": "https://www.niconico-kawaguchi.com/sango"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "坐骨神経痛の施術",
+						"description": "姿勢分析と骨格矯正で、坐骨神経痛の痛みやシビレの原因を根本から改善します。",
+						"url": "https://www.niconico-kawaguchi.com/zakotsu"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "ぎっくり腰・寝違えの施術",
+						"description": "プロアスリートも愛用する機器を使用した施術で、急な痛みを早期改善します。",
+						"url": "https://www.niconico-kawaguchi.com/gikkuri"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "頭痛の施術",
+						"description": "骨格・骨盤矯正とインナーマッスルトレーニングで、頭痛を再発させない体作りをサポートします。",
+						"url": "https://www.niconico-kawaguchi.com/zutsu"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "交通事故の施術",
+						"description": "むち打ち症などの交通事故による症状を、自賠責保険適用で施術します。",
+						"url": "https://www.niconico-kawaguchi.com/jiko"
+					}
+				}
+			]
+		}
+	}
+	</script>
 
-
-  <script type=' text/javascript' th:src='@{includes/js/jquery/jquery.js}'></script>
-  <script type="text/javascript" th:src="@{js/common.js}"></script>
-  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/n2.min.js}'></script>
-  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-frontend.min.js}'></script>
-  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-simple-type-frontend.min.js}'></script>
-  <script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-backgroundanimation.min.js}'></script>
-  <script type="text/javascript" layout:fragment="javascript"></script>
+	<script type='text/javascript' th:src='@{includes/js/jquery/jquery.js}' defer></script>
+	<script type="text/javascript" th:src="@{js/common.js}" defer></script>
+	<script type="text/javascript" th:src='@{vendor/SmartSlider3/js/n2.min.js}' defer></script>
+	<script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-frontend.min.js}' defer></script>
+	<script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-simple-type-frontend.min.js}' defer></script>
+	<script type="text/javascript" th:src='@{vendor/SmartSlider3/js/smartslider-backgroundanimation.min.js}' defer></script>
+	<script type="text/javascript" layout:fragment="javascript"></script>
 </head>
 
 </head>

@@ -4,21 +4,21 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/main_layout}">
 <head>
-  <title th:text="#{content.zakotsu.title}"></title>
+  <title th:text="#{content.zutsu.title}"></title>
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="description" th:content="@{content.zakotsu.description}" />
-  <link rel="canonical" th:href="#{content.zakotsu.url}" />
-  <meta property="og:url" th:content="#{content.zakotsu.url}" />
-  <meta property="og:title" th:content="#{content.zakotsu.title}" />
-  <meta property="og:description" th:content="#{content.zakotsu.description}" />
-  <meta property="og:image" content="https://www.niconico-kawaguchi.com/images/zakotsu.jpg" />
-  <meta property="og:image:alt" content="坐骨神経痛施術の様子" />
+  <meta name="description" th:content="@{content.zutsu.description}" />
+  <link rel="canonical" th:href="#{content.zutsu.url}" />
+  <meta property="og:url" th:content="#{content.zutsu.url}" />
+  <meta property="og:title" th:content="#{content.zutsu.title}" />
+  <meta property="og:description" th:content="#{content.zutsu.description}" />
+  <meta property="og:image" content="https://www.niconico-kawaguchi.com/images/zutsu.jpg" />
+  <meta property="og:image:alt" content="頭痛施術の様子" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "坐骨神経痛の施術",
-    "description": "腰から足にかけての痛みやしびれを、骨格・骨盤矯正で改善します。",
+    "name": "頭痛の施術",
+    "description": "慢性的な頭痛を、骨格矯正と筋肉の調整で改善します。",
     "provider": {
       "@type": "LocalBusiness",
       "name": "にこにこ整骨院・整体院",
@@ -38,22 +38,22 @@
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "坐骨神経痛施術メニュー",
+      "name": "頭痛施術メニュー",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "骨格・骨盤矯正",
-            "description": "神経を圧迫している骨の歪みを整えます"
+            "name": "骨格矯正",
+            "description": "首や背骨の歪みを整えます"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "インナーマッスルトレーニング",
-            "description": "正しい姿勢を保つための筋肉を鍛えます"
+            "name": "筋肉調整",
+            "description": "首や肩の筋肉の緊張を緩和します"
           }
         }
       ]
@@ -66,38 +66,38 @@
     <div layout:fragment="mainSection">
       <article id="post-39" class="post-39 page type-page status-publish hentry">
         <div class="entry-body">
-          <h1 class="bg-head color-grn mb-4">坐骨神経痛の施術</h1>
+          <h1 class="bg-head color-grn mb-4">頭痛の施術</h1>
           <div class="py-3">
-            <img th:src="@{images/zakotsu/intro@2x.jpg}" alt="坐骨神経痛施術の様子">
+            <img th:src="@{images/zutsu/intro@2x.jpg}" alt="頭痛施術の様子">
           </div>
           <div class="pt-3 pb-5">
-            <img th:src="@{images/zakotsu/top_trouble@2x.jpg}" alt="坐骨神経痛の症状">
+            <img th:src="@{images/zutsu/top_trouble@2x.jpg}" alt="頭痛の症状">
           </div>
           <div class="mb-4">
-            <img th:src="@{images/zakotsu/head_1@2x.png}" alt="坐骨神経痛の原因">
+            <img th:src="@{images/zutsu/head_1@2x.png}" alt="頭痛の原因">
           </div>
           <div class="text-center">
-            <p>腰から足にかけての痛みやしびれでお悩みではありませんか？<br>坐骨神経痛は、放置すると歩行困難になることもあります。</p>
-            <p>痛み止めや湿布で一時的に楽になっても、根本的な解決にはなりません。</p>
+            <p>慢性的な頭痛でお悩みではありませんか？<br>頭痛は、日常生活に大きな影響を与えます。</p>
+            <p>痛み止めで一時的に楽になっても、根本的な解決にはなりません。</p>
             <p>もう一生付き合わないといけないと諦めないで、お気軽にご相談ください！</p>
           </div>
           <div class="mb-5 text-center">
-            <img th:src="@{images/zakotsu/head_2@2x.png}" class="w-75" alt="坐骨神経痛の原因">
+            <img th:src="@{images/zutsu/head_2@2x.png}" class="w-75" alt="頭痛の原因">
           </div>
           <div class="mb-5 text-center">
-            <img th:src="@{images/zakotsu/head_3@2x.png}" alt="坐骨神経痛改善のポイント">
+            <img th:src="@{images/zutsu/head_3@2x.png}" alt="頭痛改善のポイント">
           </div>
           <div class="mb-5 text-center">
             <figure class="mb-0">
-              <img th:src="@{images/zakotsu/figure_6-1@2x.jpg}" class="w-75 px-4" alt="坐骨神経痛のメカニズム">
+              <img th:src="@{images/zutsu/figure_6-1@2x.jpg}" class="w-75 px-4" alt="頭痛のメカニズム">
             </figure>
-            <img th:src="@{images/zakotsu/figure_6-2@2x.jpg}" class="px-md-4" alt="坐骨神経痛の原因">
+            <img th:src="@{images/zutsu/figure_6-2@2x.jpg}" class="px-md-4" alt="頭痛の原因">
           </div>
           <div class="mb-5">
-            <p>坐骨神経痛は、腰から足にかけて伸びている坐骨神経が、何らかの原因で圧迫されることで起こります。</p>
-            <p>主な原因は、骨盤や腰椎の歪み、椎間板ヘルニア、脊柱管狭窄症などです。</p>
-            <p>これらの問題が神経を圧迫し、痛みやしびれを引き起こします。</p>
-            <p>また、筋肉の緊張や血行不良も症状を悪化させる要因となります。</p>
+            <p>頭痛は、首や肩の筋肉の緊張、骨格の歪み、血行不良などが原因で起こります。</p>
+            <p>特に、首や背骨の歪みは、神経を圧迫し、頭痛を引き起こすことがあります。</p>
+            <p>また、ストレスや疲労も頭痛を悪化させる要因となります。</p>
+            <p>これらの要因が重なることで、慢性的な頭痛に悩まされることになります。</p>
           </div>
           <div class="py-4">
             <div class="head-bg p-4 text-center">
@@ -105,25 +105,25 @@
             </div>
           </div>
           <div class="pb-4">
-            <p><img th:src="@{images/zakotsu/figure_6@2x.jpg}" class="spnon" alt="施術のポイント"><img th:src="@{images/sp_figure_6@2x.jpg}" class="pcnon" alt="施術のポイント"></p>
+            <p><img th:src="@{images/zutsu/figure_6@2x.jpg}" class="spnon" alt="施術のポイント"><img th:src="@{images/sp_figure_6@2x.jpg}" class="pcnon" alt="施術のポイント"></p>
           </div>
-          <p>にこにこ整骨院では、<br>痛みの原因にアプローチした施術に加え、既に結果として出ている痛みを緩和していきます。</p>
+          <p>にこにこ整骨院では、<br>頭痛の原因にアプローチした施術に加え、既に結果として出ている痛みを緩和していきます。</p>
           <p>なぜなら、施術を1回受けるだけでは痛みを繰り返さない体になる事は難しいので、<span class="pc-br">まずは普段の生活を不安なく送る為に痛みを緩和させる必要があるからです。</span></p>
           <p>そして骨格と姿勢の矯正を行いながら痛みを改善していきます。</p>
           <p>さらに、正しい体の使い方のアドバイスや姿勢を保つ為には欠かせないインナーマッスルを鍛えて痛みを繰り返さない体へと変えていきます。</p>
           <h3 class="simple-head mt-5 mb-4 text-center">整体、整骨院、接骨院でも施術の内容が違います！</h3>
           <div class="pb-4">
-            <p><img th:src="@{images/zakotsu/figure_7@2x.jpg}" alt="施術の違い"></p>
+            <p><img th:src="@{images/zutsu/figure_7@2x.jpg}" alt="施術の違い"></p>
           </div>
           <div class="pb-5">
-            <p>例えば坐骨神経痛の施術を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
+            <p>例えば頭痛の施術を受けて、その場は楽になっても短い期間で痛みが繰り返し出て来る方は「痛みを緩和」する施術を受けています。</p>
             <p>さらに痛みは改善されたけど、しばらくしたら再び痛みが出てきた方は「痛みを改善」する施術を受けています。</p>
             <p>にこにこ整骨院では痛み改善後、痛みが再発しない体づくりを目的に施術を行っています。</p>
             <p>施術の内容は院によってそれぞれ違いますので、目的に合わせた院を選択する事が大切です。</p>
           </div>
           <div class="mb-5 text-center">
-            <img th:src="@{images/zakotsu/head_4@2x.png}" class="spnon" alt="施術の流れ">
-            <img th:src="@{images/zakotsu/sp_head_4@2x.png}" class="pcnon" alt="施術の流れ">
+            <img th:src="@{images/zutsu/head_4@2x.png}" class="spnon" alt="施術の流れ">
+            <img th:src="@{images/zutsu/sp_head_4@2x.png}" class="pcnon" alt="施術の流れ">
           </div>
           <div class="bg-dot-head my-4">
             <div class="d-table w-100">
@@ -132,23 +132,23 @@
                   <p class="mb-0"><b>1</b></p>
                 </div>
                 <div class="d-table-cell text align-middle p-3">
-                  <h4 class="m-0 p-0"><b>ソフトな刺激の骨格・骨盤矯正</b></h4>
+                  <h4 class="m-0 p-0"><b>ソフトな刺激の骨格矯正</b></h4>
                 </div>
               </div>
             </div>
           </div>
           <div class="d-sm-flex row">
             <div class="col-sm-6">
-              <p><img th:src="@{images/zakotsu/figure_2@2x.jpg}" alt="骨格・骨盤矯正の様子"></p>
+              <p><img th:src="@{images/zutsu/figure_2@2x.jpg}" alt="骨格矯正の様子"></p>
             </div>
             <div class="col-sm-6">
-              <p>坐骨神経痛の原因となる骨盤や腰椎の歪みは、骨格・骨盤矯正専用のトムソンベッドを使って施術を行います。</p>
+              <p>頭痛の原因となる首や背骨の歪みは、骨格矯正専用のトムソンベッドを使って施術を行います。</p>
               <p>トムソンベッドは、お身体の負担が少なく矯正できるので、お子さまからお年寄りまで安心して受けられる施術法です。</p>
               <p>トムソンベッドを使わない整体院や整骨院では、バキバキする施術法もありますが、当院の施術はバキバキせずソフトな刺激です。</p>
             </div>
           </div>
           <div class="pb-3">
-            <p>骨格・骨盤矯正で骨を正常な位置に戻すことで、神経の圧迫を緩和し、痛みやしびれを改善します。</p>
+            <p>骨格矯正で骨を正常な位置に戻すことで、神経の圧迫を緩和し、頭痛を改善します。</p>
             <p>また、筋肉の緊張をほぐし、血行を改善することで、症状の緩和を促します。</p>
           </div>
           <div class="pb-3">
@@ -164,4 +164,4 @@
     </div>
   </div>
 </body>
-</html>
+</html> 
