@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.niconico-kawaguchi.com/sitemap.xml 
